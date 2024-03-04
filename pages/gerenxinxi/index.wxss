@@ -1,0 +1,21 @@
+.fig{
+  width: 86rpx;
+  height: 86rpx;
+  margin-top: 12rpx;
+  border-radius: 50%;
+}
+ .anitor {
+  font-weight: 400!important;
+  font-size: 28rpx!important;
+   display: flex !important;
+   align-items: center !important;
+  height: 86rpx !important;
+}
+.input{
+  height: 100rpx;
+  background-color: #ffffff;
+  margin-left: 20rpx;
+}
+.button{
+  margin-top: 20rpx;
+}

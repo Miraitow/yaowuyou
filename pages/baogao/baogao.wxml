@@ -1,0 +1,40 @@
+<view>
+<view class="box1">
+<view class="inner">
+<p class="p1">体重</p>
+<p class="p2">62.4kg</p>
+</view>
+<view class="inner">
+<p class="p1">体温</p>
+<p class="p2">36.4℃</p>
+</view>
+<view class="inner">
+<p class="p1">听力</p>
+<p class="p2">正常</p>
+</view>
+<view class="inner">
+<p class="p1 ">饮食</p>
+<p class="p2 yellow">厌食</p>
+</view>
+<view class="inner">
+<p class="p1">智力</p>
+<p class="p2">正常</p>
+</view>
+<view class="inner">
+<p class="p1">血糖</p>
+<p class="p2">正常</p>
+</view>
+<view class="inner">
+<p class="p1">血压</p>
+<p class="p2">正常</p>
+</view>
+<view class="inner">
+<p class="p1">心率</p>
+<p class="p2">正常</p>
+</view>
+</view>
+  <view class="box2">
+<span class="jilu">详细记录：</span>
+<span class="detail">王先生最近吃的少，有点厌食倾向。</span>
+</view>
+</view>

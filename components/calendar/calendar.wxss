@@ -1,0 +1,180 @@
+/* components/calendar/calendar.wxss */
+.all{
+  width: 92%;
+  box-shadow:0 5px 8px -1px rgba(175, 171, 171, 0.2);
+  border-radius: 20rpx;
+  position: absolute;
+  top: 35rpx;
+  left: 30rpx;
+  background-color: white;
+  /* height: 3300rpx; */
+  padding-bottom: 200rpx;
+}
+
+.all .footer{
+  height: 100rpx;
+  margin-top: 50rpx;
+  width: 100%;
+  border-top: 1px solid #D4DBDC;
+  display: flex;
+  justify-content:space-around;
+}
+.all .foot {
+  margin-top: 20rpx;
+  width: 25%;
+  height: 70rpx;
+  display: inline-block;
+  text-align: center;
+  font-size: 24rpx;
+} 
+.all .footer .day-dot{
+  width: 8rpx;
+  height: 8rpx;
+  display: inline-block;
+  border-radius: 8rpx;
+  margin-right: 15rpx;
+  margin-bottom: 5rpx;
+}
+.all .footer  .day-dot-g{
+  background-color: #00c399;
+}
+.all .footer  .day-dot-o{
+  background-color: #ffb800;
+}
+.all .footer  .day-dot-r{
+  background-color: #ff0000;
+}
+
+/* 头部样式start */
+.title-wrap{
+    background-color: #00c399;
+    padding-top: 20rpx;
+    padding-bottom: 10rpx;
+    border-radius: 20rpx 20rpx 0 0;
+}
+.change-date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.change-date image{
+    width: 30rpx;
+    height: 30rpx;
+    transform: scale(1.5);
+    display: flex;
+}
+.year-mouth{
+    margin: 0 50rpx;
+    color: #fff;
+    font-size: 40rpx;
+}
+.week{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30rpx;
+    margin-top: 30rpx;
+    color: #fff;
+}
+.week text{
+    flex: 1;
+    text-align: center;
+}
+/* 头部样式end */
+/* 日期区域样式start */
+.date-wrap{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mouth-date{
+    display: flex;
+    font-size: 30rpx;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 7);
+    padding-top: 10rpx;
+}
+.last-mouth text,.next-mouth text{
+    opacity: 0;
+}
+.mouth-date .day{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1F1F1F;
+
+}
+
+.mouth-date  .day-dot1{
+    width: 8rpx;
+    height: 8rpx;
+    border-radius: 50%;
+    background-color: #00c399;
+}
+.mouth-date  .day-dot2{
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  background-color: #ffb800;
+}
+.mouth-date  .day-dot3{
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  background-color: #ff0000;
+}
+
+.mouth-date .day-box{
+    border-radius: 15rpx;
+    width: 86rpx;
+    height: 50rpx;
+    padding-top: 10rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rpx;
+    padding-bottom: 10rpx;
+}
+.mouth-date .active{
+    background-color: #00c399;
+}
+.mouth-date .active text{
+    color: #fff;
+}
+.mouth-date .active .day-text{
+    font-weight: 600;
+}
+
+.baogao{
+  width: 100%;
+  height: 180rpx;
+  /* background-color: pink; */
+  display: flex;
+  justify-content:space-around;
+}
+
+.baogao .baogao-l{
+  width: 20%;
+  height: 130rpx;
+  text-align: center;
+  /* background-color: pink; */
+}
+.baogao .baogao-m{
+  width: 20%;
+  height: 130rpx;
+  text-align: center;
+
+  /* background-color: pink; */
+}
+.baogao .baogao-r{
+  width: 20%;
+  height: 130rpx; 
+   text-align: center;
+  /* background-color: pink; */
+}
+.name{
+  font-size: 35rpx;
+  margin-left: 20rpx;
+  color: #00c399;
+  font-weight: 700;
+}

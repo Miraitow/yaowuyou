@@ -1,0 +1,145 @@
+.logo{
+  width: 400rpx;
+  height: 400rpx;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+ text-align: center;
+ /* background-color: pink; */
+  overflow: hidden;
+  transform: translateX(-50%);
+  font-weight: 700;
+ 
+}
+.logo image{
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 25rpx;
+  box-shadow:0 0 5px rgb(201, 196, 196);
+}
+.xinxi{
+  font-size: 34rpx;
+font-weight: 400;
+}
+
+.placeholderStyle {
+  color: #0a0a0a;
+  font-size: 30rpx;
+  height: 100rpx;
+  width: 80%;
+  float: right;
+}
+
+.name{
+  font-size: 44rpx;
+}
+.examine-role{
+  position: absolute;
+  top: 36%;
+  padding: 0 80rpx;
+  box-sizing: border-box;
+  width: 100%;
+  height: 80rpx;
+  margin-bottom: 20rpx;
+  display:flex;
+  
+}
+.examine-role span{
+  flex:1;
+  display: inline-block;
+  height: 80rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  line-height: 80rpx;
+  text-align: center;
+  background: #E6E7EB;
+  color: #666;
+}
+
+.examine-role span:first-child{
+  border-radius: 14rpx 0 0 14rpx;
+}
+.examine-role span:last-child{
+  border-radius: 0 14rpx 14rpx 0 ;
+}
+.input{
+  border-radius: 15rpx;
+  position: absolute;
+  top: 45%;
+  width: 90%;
+  height: 650rpx;
+  background-color: #fff;
+}
+
+.btn1{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 80rpx;
+  width: 550rpx;
+  background-color: #03c49a;
+  color: #fff;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 20rpx;
+}
+
+.btn2{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 80rpx;
+  width: 550rpx;
+  border: 2rpx solid #03c49a;
+  color: #414141;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 20rpx;
+}
+.phone{
+  width: 90%;
+  height: 100rpx;
+  background-color: #f3f7fc;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+  border-radius: 10rpx;
+  box-shadow:0 0 5px rgb(243, 237, 237);
+}
+.psw{
+  width: 90%;
+  height: 100rpx;
+  background-color: #f3f7fc;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  border-radius: 10rpx;
+  box-shadow:0 0 5px rgb(243, 237, 237);
+}
+.phone image{
+  width: 75rpx;
+  height: 75rpx;
+padding: 15rpx;
+}
+.psw image{
+  width: 75rpx;
+  height: 75rpx;
+padding: 15rpx;
+}
+.psw .yanjing{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  right: 0;
+  z-index: 99;
+}
+.miss{
+  position: absolute;
+  top: 50%;
+  right: 20rpx;
+  font-size: 26rpx;
+}

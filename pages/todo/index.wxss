@@ -1,0 +1,165 @@
+/* .todo-form {
+  padding: 20rpx 60rpx;
+}
+
+.todo-form .form-item {
+  margin-bottom: 40rpx;
+  font-size: 30rpx;
+}
+
+.todo-item .todo-form-label {
+  pointer-events: none;
+}
+
+.delete-line {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, .5);
+}
+
+.todo-list {
+  padding: 30rpx 60rpx;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.todo-list .todo-item {
+  margin-bottom: 40rpx;
+  align-items: center;
+  display: inline-flex;
+  font-size: 30rpx;
+  justify-content: space-between;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.todo-item .todo-delete {
+  line-height: 48rpx;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  color: #ff0000;
+  position: fixed;
+  right: 10rpx;
+}
+
+.todo-completion{
+  text-align: center;
+  padding: 20rpx 0;
+  font-size: 40rpx;
+}
+.btn{
+  background-color: #00c399;
+  color: #fff;
+} */
+
+.tabs{
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  padding-bottom: 150rpx;
+}
+
+.content{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: pink;
+}
+.van-card{
+  margin-bottom: 4rpx;
+  width: 100%;
+  height: 150rpx;
+  background-color: #fff !important;
+}
+.van-card__img{
+  margin-top: 0 !important;
+  width: 130rpx !important;
+  height: 130rpx !important;
+}
+.van-card__title{
+  color: #444;
+  font-size: 30rpx!important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+.zixun{
+  position: relative;
+}
+ .zixun .p{
+  font-size: 25rpx;
+position: absolute;
+right: 10%;
+top: 65%;
+}
+.zixun .image{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 6%;
+  top: 65%;
+}
+.todo-form {
+  padding: 20rpx 60rpx;
+}
+
+.todo-form .form-item {
+  margin-bottom: 40rpx;
+  font-size: 30rpx;
+  background-color: #fff;
+  border: 2rpx solid #00c399;
+  height: 50rpx;
+  border-radius: 10rpx;
+}
+
+.todo-item .todo-form-label {
+  pointer-events: none;
+}
+
+.delete-line {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, .5);
+}
+
+.todo-list {
+  padding: 30rpx 60rpx;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.todo-list .todo-item {
+  margin-bottom: 40rpx;
+  align-items: center;
+  display: inline-flex;
+  font-size: 32rpx;
+  justify-content: space-between;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.todo-item .todo-delete {
+  line-height: 48rpx;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  color: #ff0000;
+  position: fixed;
+  right: 10rpx;
+}
+
+.todo-completion{
+  text-align: center;
+  padding: 20rpx 0;
+  font-size: 40rpx;
+  color: #00c399;
+}
+.btn{
+  background-color: #00c399;
+  color: #fff;
+  width: 630rpx;
+}
+
+.box{
+  position: absolute;
+  top: 15%;
+}

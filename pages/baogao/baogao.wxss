@@ -1,0 +1,43 @@
+/* pages/baogao/baogao.wxss */
+
+.inner{
+  height: 100rpx;
+  background-color: #fff;
+  margin-bottom: 2rpx;
+}
+.p1{
+  line-height: 100rpx;
+  font-size: 35rpx;
+  margin-left: 40rpx;
+}
+.p2{
+  float: right;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  margin-right: 35rpx;
+}
+.yellow{
+  color: #ffb909;
+}
+
+
+.box2{
+  width: 700rpx;
+  height: 220rpx;
+  border-radius: 5rpx;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform:  translateX(-50%);
+  border: #ccc solid 3rpx;
+  margin-top: 40rpx;
+}
+.jilu{
+  display: block;
+  font-size: 30rpx;
+  margin: 10rpx;
+}
+.detail{
+  font-size: 28rpx;
+  margin-left: 50rpx;
+}

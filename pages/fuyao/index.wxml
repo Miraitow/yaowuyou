@@ -1,0 +1,24 @@
+<view class="box ">
+  <view class="set-1 ">
+ <view class="todo" bindtap="todo">
+ <image src="/image/daiban .png"></image>
+ <view class="handle">处理待办事项</view>
+ </view>
+    <block class="inner" wx:for="{{stepslist}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+      <view class="set-2 ">
+      <text class="set2-text1">{{item.text1}}</text>
+       <view class="set-view" wx:for="{{item.test}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+         <view class="set-view-text2">{{item.text2}}</view>
+         <view class="set-view-text3" wx:for="{{item.text3}}">
+           <view class="set-view-text3-item" wx:for-item="item" wx:for-index="index" wx:key="index">{{item.text}}</view>
+         </view>
+       </view>
+      </view>
+    </block>
+
+
+      <view style="width: 15vw; border-radius: 15vw;height: 15vw;" bindtap="onclick" class="btn">
+        <image src="../../image/jiahao.png" class="image"></image>
+      </view>
+  </view>
+</view>

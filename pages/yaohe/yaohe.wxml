@@ -1,0 +1,79 @@
+<view>
+<view class="box">
+<view class="title">
+<image src="/image/gongzuotai.png"></image>
+<p class="p1">101房 01药箱 王先生</p>
+<view class="btn"bindtap="tianjia">添加药品</view>
+</view>
+<view class="pill">
+<p class="p2">易顺脉缓释胶囊</p>
+<p class="p3">122粒</p>
+</view>
+<view class="pill">
+<p class="p2">阿司匹林胶囊</p>
+<p class="p3">134粒</p>
+</view><view class="pill">
+<p class="p2">藿香正气胶囊</p>
+<p class="p3">20粒</p>
+</view><view class="pill">
+<p class="p2">布洛芬缓释胶囊</p>
+<p class="p3">24粒</p>
+</view>
+<view class="pill">
+<p class="p2">艾普拉唑肠溶片</p>
+<p class="p3">18片</p>
+</view><view class="pill">
+<p class="p2">阿莫西林胶囊</p>
+<p class="p3">缺药</p>
+</view><view class="pill">
+<p class="p2">异山梨酯缓释片</p>
+<p class="p3">缺药</p>
+</view>
+</view>
+<view class="box">
+<view class="title">
+<image src="/image/gongzuotai.png"></image>
+<p class="p1">101房 02药箱 刘女士</p>
+<view class="btn">添加药品</view>
+</view>
+<view class="pill">
+<p class="p2">阿司匹林胶囊</p>
+<p class="p3">84粒</p>
+</view>
+<view class="pill">
+<p class="p2">藿香正气胶囊</p>
+<p class="p3">12粒</p>
+</view><view class="pill">
+<p class="p2">布洛芬缓释胶囊</p>
+<p class="p3">24粒</p>
+</view><view class="pill">
+<p class="p2">艾普拉唑肠溶片</p>
+<p class="p3">10片</p>
+</view>
+<view class="pill">
+<p class="p2">阿莫西林胶囊</p>
+<p class="p3">4粒</p>
+</view>
+</view>
+<view class="box">
+<view class="title">
+<image src="/image/gongzuotai.png"></image>
+<p class="p1">102房 01药箱 李先生</p>
+<view class="btn">添加药品</view>
+</view>
+<view class="pill">
+<p class="p2">布洛芬缓释胶囊</p>
+<p class="p3">24粒</p>
+</view>
+<view class="pill">
+<p class="p2">跌打损伤贴</p>
+<p class="p3">23片</p>
+</view><view class="pill">
+<p class="p2">阿莫西林胶囊</p>
+<p class="p3">10粒</p>
+</view><view class="pill">
+<p class="p2">异山梨酯缓释片</p>
+<p class="p3">10粒</p>
+</view>
+</view>
+</view>

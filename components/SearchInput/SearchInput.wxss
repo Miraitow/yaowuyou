@@ -1,0 +1,22 @@
+/* components/SearchInput/SearchInput.wxss */
+.view{
+  width: 96%;
+  height: 80rpx;
+  position: absolute;
+  z-index: 99;
+  left: 50%;
+  top: 10rpx;
+  transform: translateX(-50%);
+}
+.navigate{
+  border: 1px  solid  #00c399;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 35rpx;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 4px 16px 0px rgba(148, 153, 155, 0.08);
+  border-radius: 40rpx;
+  color: #00c399;
+}

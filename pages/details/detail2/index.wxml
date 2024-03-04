@@ -1,0 +1,33 @@
+<view>
+  <view class="box">
+  <view class="h1">糖尿病——“温柔而甜蜜的杀手”</view>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;糖尿病这个词对我们来说并非完全陌生，作为“甜蜜杀手”，糖尿病已成为威胁人类健康的第三大疾病，它其实离我们并没有想象中那么远。</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;糖尿病是一个长期慢性的过程，可以导致多种并发症，但由于并发症发生早期常常悄无声息，所以很多人对糖尿病都不够重视，没有注意到糖尿病所带来的危害。
+</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;实际上，糖尿病是一种能够带来全身多种并发症的严重疾病,而这些并发症晚期会导致患者的致死致残，使其生活质量显著下降。因此，重视早期识别糖尿病的并发症至关重要。
+</text>
+<view class="h2">糖尿病常见的一些并发症有哪些呢？</view>
+<text class="text">1、糖尿病酮症酸中毒，这个时候患者主要的表现就是恶心，呕吐，腹痛，可能会出现呼吸困难；</text>
+<text class="text">2、糖尿病高渗性昏迷，表现极度口干、多饮，纳差，思睡，严重时昏迷；</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在微血管的并发症当中主要有：
+</text>
+<text class="text">1、糖尿病神经病变，这是糖尿病最为常见的并发症。糖尿病可通过不同的机制使神经受损，包括高血糖引起的直接损害以及通过小血管受损而使流向神经的血液减少。</text>
+<text class="text">2、糖尿病视网膜病变，是糖尿病特有的微血管并发症。当患者出现糖尿病视网膜病变的时候，早期症状并不明显，无视力改变，在严重的时候才导致视力明显的下降，而这个时候常错过最佳治疗时期，最终或导致失明。</text>
+<text class="text">3、糖尿病肾病在早期往往较隐秘，如果我们不做相关的检查难以早期诊断，但当出现泡沫尿、肢体浮肿时，已经到了中晚期，采用多种方法治疗效果仍欠佳，最终进展到尿毒症，需要进行规律的血液透析。</text>
+<view class="h2">那得了糖尿病以后，我们在日常生活中要注意哪些方面呢？</view>
+<text class="text">1、糖尿病的饮食治疗并不是千篇一律的，是与患者的并发症以及他（她）的活动状态相关的，但原则上糖尿病的饮食要避免甜食；</text>
+<text class="text">2、糖尿病的运动指导，首先推荐有氧运动，建议饭后40分钟开始运动，持续超过半个小时，微微见汗，这样才能够起到降糖分解脂肪的作用，同时运动过程中要注意防止发生低血糖。</text>
+<text class="text">3、生活规律，避免熬夜，睡眠过晚或过少都容易升高血糖。</text>
+  </view>
+  <view class="shop">
+    <view class="inner" bindtap="gotoshop">
+      <van-card
+  num="1"
+  price="24.00"
+  title="【那格列奈片】 降血糖 糖尿病用药 控血糖 2型药"
+  thumb="/image/shop/shop1.jpg"
+/>
+<text class="text">注：点此链接将自动跳转京东应用商品界面</text>
+    </view>
+  </view>
+</view>

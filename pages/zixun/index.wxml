@@ -1,0 +1,280 @@
+<!-- 健康资讯页面 -->
+<!-- 搜索框 -->
+<SearchInput></SearchInput>
+<!-- 内容页 -->
+ <Tabs class="tabs" tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+<view class="zixun">
+  <van-card
+  title="我只是牙疼，怎么检查出了冠心病呢？"
+  thumb="/image/zixun/zixun_1.png"
+  bindtap="gotodetail1"
+/>
+<p class="p">301次浏览</p>
+<image class="image" src="/image/huomiao.png"></image>
+</view>
+<view class="zixun">
+  <van-card
+  title="流行性感冒的主要传播途径有哪些呢？"
+  thumb="/image/zixun/zixun_2.jpg"
+  bindtap="gotodetail1"
+/>
+<p class="p">114次浏览</p>
+</view>
+<view class="zixun">
+  <van-card
+  title="流感还是普通感冒？治疗用药大不同！"
+  thumb="/image/zixun/zixun_3.png"
+  bindtap="gotodetail1"
+/>
+<p class="p">107次浏览</p>
+</view>
+<view class="zixun">
+  <van-card
+  title="老人骨折保守治疗方法有哪些？"
+  thumb="/image/zixun/zixun_10.jpg"
+  bindtap="gotodetail1"
+/>
+<p class="p">16次浏览</p>
+</view>
+<view class="zixun">
+  <van-card
+  title="精神分裂症患者间断服药，会有影响吗？"
+  thumb="/image/zixun/zixun_11.jpg"
+  bindtap="gotodetail1"
+/>
+<p class="p">12次浏览</p>
+</view>
+<view class="zixun">
+  <van-card
+  title="应用生长激素促身高生长安全吗？"
+  thumb="/image/zixun/zixun_12.jpg"
+  bindtap="gotodetail1"
+/>
+<p class="p">14次浏览</p>
+</view>
+<view class="zixun">
+  <van-card
+  title="早期肺癌能治愈吗？"
+  thumb="/image/zixun/zixun_13.jpg"
+  bindtap="gotodetail1"
+/>
+<p class="p">22次浏览</p>
+</view>
+<view class="zixun">
+  <van-card
+  title="抑郁症的症状表现"
+  thumb="/image/zixun/zixun_14.jpg"
+  bindtap="gotodetail1"
+/>
+<p class="p">50次浏览</p>
+</view>
+  </block>
+  <block wx:elif="{{tabs[1].isActive}}">
+    <view class="zixun">
+      <van-card
+  title="糖尿病——“温柔而甜蜜的杀手”"
+  thumb="/image/zixun/zixun_4.jpg"
+  bindtap="gotodetail2"
+/>
+<p class="p">534次浏览</p>
+<image class="image" src="/image/huomiao.png"></image>
+</view>
+<view class="zixun">
+  <van-card
+  title="糖尿病如何通过运动来控制？"
+  thumb="/image/zixun/zixun_5.jpg"
+  bindtap="gotodetail2"
+/>
+<p class="p">164次浏览</p>
+</view>
+<view class="zixun">
+  <van-card
+  title="如何早期发现糖尿病？"
+  thumb="/image/zixun/zixun_15.jpg"
+  bindtap="gotodetail2"
+/>
+<p class="p">68次浏览</p>
+</view>
+<view class="zixun">
+  <van-card
+  title="给糖尿病患者的三种健康早餐"
+  thumb="/image/zixun/zixun_16.jpg"
+  bindtap="gotodetail2"
+/>
+<p class="p">104次浏览</p>
+</view>
+<view class="zixun">
+  <van-card
+  title="糖尿病现在能根治吗？"
+  thumb="/image/zixun/zixun_17.jpg"
+  bindtap="gotodetail2"
+/>
+<p class="p">38次浏览</p>
+</view>
+<view class="zixun">
+  <van-card
+  title="哪些糖尿病患者必须要打胰岛素？"
+  thumb="/image/zixun/zixun_18.jpg"
+  bindtap="gotodetail2"
+/>
+<p class="p">42次浏览</p>
+</view>
+  </block>
+  <block wx:elif="{{tabs[2].isActive}}">
+    <view class="zixun">
+      <van-card
+  title="新手妈妈必看的关于婴儿的7条冷知识"
+  thumb="/image/zixun/zixun_7.jpg"
+  bindtap="gotodetail3"
+/>
+<p class="p">106次浏览</p>
+<image class="image" src="/image/huomiao.png"></image>
+</view>
+<view class="zixun">
+  <van-card
+  title="什么是孕酮？孕期体内孕酮低是不是说明宝宝不好？"
+  thumb="/image/zixun/zixun_6.jpg"
+  bindtap="gotodetail3"
+/>
+<p class="p">89次浏览</p>
+</view>
+  
+<view class="zixun">
+  <van-card
+  title="应用生长激素促身高生长安全吗？"
+  thumb="/image/zixun/zixun_12.jpg"
+  bindtap="gotodetail1"
+/>
+<p class="p">67次浏览</p>
+</view>
+<view class="zixun">
+  <van-card
+  title="补维生素D等于补钙吗？"
+  thumb="/image/zixun/zixun_19.jpg"
+  bindtap="gotodetail3"
+/>
+<p class="p">41次浏览</p>
+</view>
+<view class="zixun">
+  <van-card
+  title="新生儿喂奶后吐奶正常吗？"
+  thumb="/image/zixun/zixun_20.jpg"
+  bindtap="gotodetail3"
+/>
+<p class="p">35次浏览</p>
+</view>
+<view class="zixun">
+  <van-card
+  title="孩子发烧应该捂被子还是冰敷？"
+  thumb="/image/zixun/zixun_21.jpg"
+  bindtap="gotodetail3"
+/>
+<p class="p">33次浏览</p>
+</view>
+  </block>
+  <block wx:elif="{{tabs[3].isActive}}">
+<view class="zixun">
+  <van-card
+    bindtap="gotodetail"
+  title="关于康复的一点小知识"
+  thumb="/image/zixun/zixun_8.jpg"
+/>
+<p class="p">335次浏览</p>
+<image class="image" src="/image/huomiao.png"></image>
+</view>
+<view class="zixun">
+  <van-card
+    bindtap="gotodetail"
+  title="现代康复治疗助患者回归健康"
+  thumb="/image/zixun/zixun_22.jpg"
+  bindtap="gotodetail"
+/>
+<p class="p">127次浏览</p>
+</view>
+<view class="zixun">
+  <van-card
+    bindtap="gotodetail"
+  title="德国模式的创新康复治疗，助力中风患者重获新“生”和新“声”"
+  thumb="/image/zixun/zixun_23.jpg"
+  bindtap="gotodetail"
+/>
+<p class="p">75次浏览</p>
+</view>
+<view class="zixun">
+  <van-card
+    bindtap="gotodetail"
+  title="康复医学科普知识"
+  thumb="/image/zixun/zixun_24.jpg"
+  bindtap="gotodetail"
+/>
+<p class="p">54次浏览</p>
+</view>
+  </block>
+  <block wx:elif="{{tabs[4].isActive}}">
+<view class="zixun">
+  <van-card
+  title="风湿、类风湿到底怎么回事？患者在运动和饮食中该注意什么？"
+  thumb="/image/zixun/zixun_25.jpg"
+  bindtap="gotodetail4"
+/>
+<p class="p">302次浏览</p>
+<image class="image" src="/image/huomiao.png"></image>
+</view>
+<view class="zixun">
+  <van-card
+  title="类风湿和风湿的区别有哪些？"
+  thumb="/image/zixun/zixun_9.jpg"
+  bindtap="gotodetail4"
+/>
+<p class="p">221次浏览</p>
+<image class="image" src="/image/huomiao.png"></image>
+</view>
+<view class="zixun">
+  <van-card
+  title="风湿骨病是什么了？身体出现7种症状，离风湿骨病就不远了！"
+  thumb="/image/zixun/zixun_26.jpg"
+  bindtap="gotodetail4"
+/>
+<p class="p">89次浏览</p>
+</view>
+<view class="zixun">
+  <van-card
+  title="有风湿病怎么办？"
+  thumb="/image/zixun/zixun_27.jpg"
+  bindtap="gotodetail4"
+/>
+<p class="p">71次浏览</p>
+</view>
+  </block>
+</Tabs> 
+<!-- <view class="box">
+  <wxs module="tools">
+  module.exports.getProgress = function (todo) {
+    var length = todo.length;
+    var checked = 0;
+    for (var i = 0; i < todo.length; i++) {
+      if (todo[i].completed) {
+        checked++;
+      }
+    }
+    return '完成度:' + (checked / length * 100).toFixed(2) + '%'
+  }
+</wxs>
+<view class="todo-completion">{{tools.getProgress(todoList)}}</view>
+<view class="todo-list">
+  <view class="todo-item" wx:for="{{todoList}}" wx:key="unique" bindtap="todoClick" data-index="{{index}}">
+    点击条目增加删除线
+    <view class="todo-form-label {{item.completed?'delete-line':''}}">
+      <radio checked="{{item.completed}}" /> {{item.thing}}
+    </view>
+    catchtap阻止冒泡并绑定事件
+    <view class="todo-delete" catchtap="deleteClick" data-index="{{index}}">删除</view>
+  </view>
+</view>
+<view class="todo-form">
+  bindconfirm  点击完成按钮时触发
+  <input class="form-item" type="text" placeholder="+新增任务......" placeholder-style="font-size : 35rpx;color : #00c399; " value="{{todoThing}}" bindinput="todoThingInput" bindconfirm="addClick" />
+  <button class="btn" bindtap="addClick">添加</button>
+</view>
+</view> -->

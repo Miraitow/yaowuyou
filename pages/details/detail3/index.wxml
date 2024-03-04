@@ -1,0 +1,34 @@
+<view>
+  <view class="box">
+  <view class="h1">新手妈妈必看关于婴儿的7条冷知识，防套路小技巧收下吧</view>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;很多朋友从新手妈妈晋级后都会感叹到，现在小婴儿太聪明了感觉一天被ta套路如何有效防套路。小爱今天带你了解关于婴儿的7条冷知识!孕妈妈防套路，宝妈看看中了几条呢~</text>
+<view class="h2">1、宝宝的套路</view>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宝宝出生后，很多妈妈爸爸都有错觉这个事儿，是不是被宝宝°套路°了。比如一看到宠ta的人。就开始哭着求抱抱。其实~新生儿的脑容量可以达到成人的60%以上。小家伙们可比我们想象中要聪明很多。18~24月龄的小婴儿大脑的基本结构和体积大小，已经基本接近成人水平。所以不是你的错觉。小家伙。真的懂!
+</text>
+<view class="h2">2、宝宝假哭</view>
+<text class="text"decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;很多妈妈爸爸会说。宝宝哭的时候没有眼泪，是在假哭。其实~新生儿一般要到出生3~4周以后。才能在哭泣时流出眼泪。这是因为小家伙泪腺还没有发全。“干打雷不下雨°也是正常的。宝宝才没有°装哭°。人家是真的在哭。</text>
+<view class="h2">3、宝宝近视</view>
+<text class="text"decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;刚出生的宝贝其实都是“近视”!很多家长在刚开始与宝宝互动的时候，都发现宝宝毫无回应。其实这是因为宝宝刚出生的时都是“近视”。出生后的6周内。宝宝是看不清周围的。6周后视力就会逐渐恢复啦~</text>
+<view class="h2">4、宝宝脱发</view>
+<text class="text"decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宝宝出生后几个月内就会出现脱发。这个属干生理性聪发。大多都会逐渐恢复。属干正常现象的~妈妈不要着急!平时多注意孩子的维生素D的补充。另外可以带孩子适当晒晒太阳就可以啦~
+</text>
+<view class="h2">5、臭臭不臭</view>
+<text class="text"decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新生儿宝宝的第一坨粑粑不臭。我们印象中，人类的粪便总是臭臭的。这是因为肠道菌群在分解食物的时候，会产生有臭味的成分。宝宝的第一坨胎粪。并没有经历菌群的分解作用，彼时宝宝肠道还没有成立菌群!胎粪主要有肠壁上皮细胞、胎毛、胎脂等物质构成。人家可是一点也不臭的!
+</text>
+<view class="h2">6、宝宝扁平足</view>
+<text class="text"decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;婴儿要到2周岁之后，才会出现明显的足弓。成年人出现°扁平脚°。不仅不美观，走路还更容易感到累!小婴儿脚步扁平是正常的。不过如果娃到了10岁以后，依然还是小脚平平，那么以后多半会成为°扁平脚°人群啦。</text>
+<view class="h2">7、宝宝突然瘦</view>
+<text class="text"decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用重庆话来说就是宝宝首次抽条~宝宝出生后不久会变瘦，新生几在出生3-5天内。由于一些生理原因。体重会减轻200-300g，一般一周后就恢复到出生时的体重。</text>
+  </view>
+  <view class="shop">
+    <view class="inner" bindtap="gotoshop">
+      <van-card
+  num="1"
+  price="119.00"
+  title="【爱得利】 吸管奶瓶 一岁以上大宝宝宽口径带重力球"
+  thumb="/image/shop/shop3.jpg"
+/>
+<text class="text">注：点此链接将自动跳转京东应用商品界面</text>
+    </view>
+  </view>
+</view>

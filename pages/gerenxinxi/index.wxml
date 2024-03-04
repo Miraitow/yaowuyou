@@ -1,0 +1,37 @@
+  <view class="window">
+    <van-cell title="头像" bind:click="doUploadAvatar" size="large" is-link custom-class="userProfileCell" custom-class="anitor">
+      <view>
+        <image class="fig" wx:if="{{roldId == 0}}" src="/image/yonghu.png" mode="" />
+        <image class="fig" wx:if="{{roldId == 1}}" src="/image/hushi.png" mode="" />
+      </view>
+    </van-cell>
+    <van-cell title="昵称" bind:click="showPopup1" size="large" value="{{ msg}}" is-link>
+    </van-cell>
+    <van-cell title="性别" bind:click="showPopup2" size="large" value="{{sex}}" is-link>
+    </van-cell>
+    <view>
+</view>
+  </view>
+ 
+    <van-popup show="{{ show1 }}" bind:close="onClose1"  position="bottom"
+  custom-style="height: 50%">
+    <input class="input" type="text" placeholder="请输入修改后的昵称" model:value="{{msg}}" />
+      <button  bindtap="submit">提交修改</button> 
+  </van-popup>
+
+<van-popup show="{{ show2 }}" bind:close="onClose2"  position="bottom"
+  custom-style="height: 50%">
+  <input class="input" type="text" placeholder="请输入修改后的性别" model:value="{{sex}}" />
+      <button  bindtap="submit">提交修改</button> 
+</van-popup>
+<van-popup show="{{ show3 }}" bind:close="onClose3"  position="bottom"
+  custom-style="height: 50%">
+    <van-picker title="提醒方式" show-toolbar columns="{{ columns3 }}"  bind:cancel="onClose3"
+  bind:confirm="onConfirm3"/>
+</van-popup>
+<van-popup show="{{ show4 }}" bind:close="onClose4"  position="bottom"
+  custom-style="height: 50%">
+    <van-picker title="重复次数" show-toolbar columns="{{ columns4 }}"  bind:cancel="onClose4"
+  bind:confirm="onConfirm4"/>
+</van-popup>
+ <button class="button" bindtap="logout">退出登录</button>

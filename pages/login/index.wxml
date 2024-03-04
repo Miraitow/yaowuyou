@@ -1,0 +1,32 @@
+<view>
+  <view class="logo">
+<image src="/image/logo.png"></image>
+<view class="name">小药</view>
+<view class="xinxi">用心智造 方便快捷</view>
+</view>
+
+<view class="container " >
+<view class="examine-role">
+<span bindtap="clickRole0"  style="{{myClassStyle0}}">监护人登录</span>
+<span bindtap="clickRole1" style="{{myClassStyle1}}">护工登录</span>
+</view>
+<view class="input" >
+  <view class="phone">
+    <image src="/image/shouji.png"></image>
+    <input class="inputStyle flex1 " class="placeholderStyle" type="text" placeholder="请输入账号或手机号"  value="{{employeeNumber}}" />
+  </view>
+  <view class="psw">
+    <image src="/image/jiesuo.png"></image>
+    <input class="inputStyle flex1 " class="placeholderStyle" type="text" password="{{show}}" placeholder="请输入密码"  value="{{password}}"  />
+    <image  bindtap="handleshow" src="/image/yanjing.png" class="yanjing"></image>
+  </view>
+  <span class="miss">忘记密码？</span>
+  <view class="btn1">
+  <view  bindtap="clickLogin">登录</view>
+</view>
+<view class="btn2">
+  <view  bindtap="clickRegister">立即注册</view>
+</view>
+</view>
+</view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+      "calendar": "../../components/calendar/calendar"
+  },
+  "navigationBarTitleText": "服药记录统计"
+}

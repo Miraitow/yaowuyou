@@ -1,0 +1,53 @@
+<!--pages/jiarenxinxi/jiarenxinxi.wxml-->
+<view>
+<view class="card">
+<view class="top">
+<view class="top_l">
+<image src="/image/jiaren1.jpg"></image>
+</view>
+<view class="top_r">
+<view class="title">
+<view class="name">王多金</view>
+<view class="age">68岁</view>
+</view>
+<view class="msg">监护人：阿明</view>
+<view class="msg">监护人电话：15197294235</view>
+<view class="msg">所住房间：101房</view>
+<view class="msg">药箱编号：01药箱</view>
+<view class="msg">出生日期：1955-02-01</view>
+<view class="msg">家庭住址：湖南省湘潭市雨湖区</view>
+</view>
+</view>
+<view class="bottom">
+<view class="content">
+<span class="shuoming">个人说明：</span>
+<span class="detail">患有糖尿病，对猕猴桃过敏，对一般药物无过敏反应。不挑食。喜欢下棋、喝茶，为人和善。</span>
+</view>
+</view>
+</view>
+<view class="card">
+<view class="top">
+<view class="top_l">
+<image src="/image/jiaren2.jpg"></image>
+</view>
+<view class="top_r">
+<view class="title">
+<view class="name">张玉兰</view>
+<view class="age">63岁</view>
+</view>
+<view class="msg">监护人：阿红</view>
+<view class="msg">监护人电话：19118127070</view>
+<view class="msg">所住房间：103房</view>
+<view class="msg">药箱编号：02药箱</view>
+<view class="msg">出生日期：1960-05-01</view>
+<view class="msg">家庭住址：湖南省湘潭市九华区</view>
+</view>
+</view>
+<view class="bottom">
+<view class="content">
+<span class="shuoming">个人说明：</span>
+<span class="detail">对一般食物和一般药物无过敏现象。喜欢交友、打扑克，为人和善。</span>
+</view>
+</view>
+</view>
+</view>

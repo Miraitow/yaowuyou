@@ -1,0 +1,28 @@
+<wxs module="tools">
+  module.exports.getProgress = function (todo) {
+    var length = todo.length;
+    var checked = 0;
+    for (var i = 0; i < todo.length; i++) {
+      if (todo[i].completed) {
+        checked++;
+      }
+    }
+    return '完成度:' + (checked / length * 100).toFixed(2) + '%'
+  }
+</wxs>
+<view class="todo-completion">{{tools.getProgress(todoList)}}</view>
+<view class="todo-list">
+  <view class="todo-item" wx:for="{{todoList}}" wx:key="unique" bindtap="todoClick" data-index="{{index}}">
+    <!-- 点击条目增加删除线 -->
+    <view class="todo-form-label {{item.completed?'delete-line':''}}">
+      <radio checked="{{item.completed}}" /> {{item.thing}}
+    </view>
+    <!-- catchtap阻止冒泡并绑定事件 -->
+    <view class="todo-delete" catchtap="deleteClick" data-index="{{index}}">删除</view>
+  </view>
+</view>
+<view class="todo-form">
+  <!-- bindconfirm  点击完成按钮时触发 -->
+  <input class="form-item" type="text" placeholder="+新增任务......" placeholder-style="font-size : 35rpx;color : #00c399; " value="{{todoThing}}" bindinput="todoThingInput" bindconfirm="addClick" />
+  <button class="btn" bindtap="addClick">添加</button>
+</view>

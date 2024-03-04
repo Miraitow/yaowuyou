@@ -1,0 +1,50 @@
+/* pages/call-detail/call-detail-1/call-detail-1.wxss */
+.img{
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform:  translateX(-50%);
+  overflow: hidden;
+  text-align: center;
+}
+.img image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 25rpx;
+}
+.name{
+  font-size: 30rpx;
+  color: #000;
+}
+.xinxi{
+  font-size: 24rpx;
+  color: #727272;
+}
+.foot{
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+
+.foot .img1{
+  width: 70rpx;
+  height: 70rpx;
+  position: absolute;
+  top: 50%;
+  transform:  translateY(-50%);
+  right: 130rpx;
+}
+
+.foot .img2{
+  width: 70rpx;
+  height: 70rpx;
+  position: absolute;
+  top: 50%;
+  transform:  translateY(-50%);
+  right: 30rpx;
+}
+.foot .foot-m,.foot-f{
+  margin-top: 30rpx;
+}

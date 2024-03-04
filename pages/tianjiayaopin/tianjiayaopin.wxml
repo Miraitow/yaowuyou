@@ -1,0 +1,30 @@
+<view class="box">
+<view class="title">
+<image src="/image/yaoxiang.png"></image>
+<p class="p1">添加药品</p>
+</view>
+<view class="middle">
+<view class="middle-l">
+  <view class="shangchuan">
+  <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+</view>
+</view>
+<view class="middle-m">
+<form>
+<view class="saoma"> <input  placeholder="扫码识别药品名"/></view>
+<view class="num"><input placeholder="2" /></view>
+<view class="xuanze">
+  <input placeholder="粒" />
+</view>
+</form>
+</view>
+<view class="middle-r">
+  <view class="saom">
+  <image src="/image/saoma.png" bindtap="saoma"></image>
+</view>
+</view>
+</view>
+<view class="foot">
+<view class="tianjia" bindtap="submit">添加</view>
+</view>
+</view>

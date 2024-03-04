@@ -1,0 +1,52 @@
+/* pages/call/index.wxss */
+page{
+  padding-bottom:230rpx;
+}
+#searchOuterView{
+  padding:25rpx;
+  text-align: left;
+}
+#searchInnerView{
+  width: 465rpx;
+  height:70rpx;
+  background:#fff;
+  border: 1rpx solid #00c399;
+  border-radius: 15rpx;
+  line-height: 60rpx;
+  box-sizing: border-box;
+}
+#searchInnerView > image{
+  width:40rpx;
+  height:40rpx;
+  vertical-align: middle;
+}
+.searchInnerView{
+  display: inline-block;
+  font-size: 28rpx;
+  vertical-align: middle;
+}
+.button{
+  display: inline-block;
+  color: #000;
+  margin-top: 2rpx;
+}
+
+.tianjia{
+  position: absolute;
+  right: 30rpx;
+  top: 38rpx;
+  color: #00c399;
+}
+
+.right{
+	background-color: red;
+  width: 65px;
+  height: 150rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 150rpx;
+}
+.van-card{
+  height: 150rpx;
+  background-color: #fff !important;
+}

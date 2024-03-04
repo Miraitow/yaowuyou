@@ -1,0 +1,25 @@
+<!--pages/search/index.wxml-->
+<view class="search">
+  <input class="searchInput" placeholder="请输入疾病名称或关键词" placeholder-style="font-size : 28rpx"/><view class="button" bindtap="touch" >搜索</view>
+</view>
+<!-- 实现左右联动效果 -->
+<view class="link">
+	<!-- 左边 -->
+	<scroll-view class="left" scroll-y scroll-with-animation scroll-top="{{scrollTops}}">
+		<view class="item {{tabCur===index?'active':''}}" wx:for="{{list}}" wx:key="index" data-index="{{index}}" bindtap="tabNav">{{item.name}}</view>
+	</scroll-view>
+
+	<!-- 右边 -->
+	<scroll-view class="right" scroll-y scroll-with-animation scroll-into-view="scroll-{{rightCur}}" bindscroll="scrollLink">
+		<!-- 重点： id="scroll-{{index}}"  这个必须要有 不然实现不了左边联动右边的效果-->
+		<view wx:for="{{list}}" wx:key="{{index}}" class="right-cont" id="scroll-{{index}}">
+			<view class="title">{{item.name}}</view>
+			<!-- <view class="content">
+				<view class="list-item" wx:for="{{item.list}}" wx:key="{{indexs}}" wx:for-index="indexs" wx:for-item="items">{{items}}</view>
+			</view> -->
+      <view  bindtap="gotoDetail" class="list-item" wx:for="{{item.list}}" wx:key="{{indexs}}" wx:for-index="indexs" wx:for-item="items">
+        <view class="split">{{items}}</view>
+      </view>
+		</view>
+	</scroll-view>
+</view>

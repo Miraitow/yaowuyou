@@ -1,0 +1,61 @@
+<view>
+<!-- 背景图 -->
+<view class="img">
+<image src="../../image/geren.png"></image>
+</view>
+<view class="head">
+<view class="touxiang" wx:if="{{roldId == 0}}">
+  <image src="/image/yonghu.png" ></image>
+</view>
+<view class="touxiang" wx:if="{{roldId == 1}}">
+  <image src="/image/hushi.png" ></image>
+</view>
+<view class="title" wx:if="{{roldId == 0}}">
+p002
+</view>
+<view class="title" wx:if="{{roldId == 1}}">
+admin
+</view>
+<view class="icon">
+  <!-- <image src="/image/dianhua1.png" /> -->
+  <view class="tell">
+编辑查看个人资料
+</view>
+</view>
+<view class="arrow" bindtap="gerenxinxi">
+  <image src="/image/youjiantou.png"  b/>
+</view>
+</view>
+
+<!-- 功能栏 -->
+<view class="body">
+<view class="bodyy body-l" bindtap="jiarenxinxi">
+  <image src="../../image/aixin.png"></image>
+ <view>老人信息</view>
+</view>
+<view class="bodyy  body-m" bindtap="yaohe">
+  <image src="../../image/yaoxiang.png"></image>
+ <view>药盒情况</view>
+</view>
+<view class="bodyy body-r" bindtap="tijian">
+  <image src="../../image/tijianxiangmu.png"></image>
+ <view>每月体检</view>
+</view>
+<view class="bodyy body-r" bindtap="online">
+  <image src="../../image/kefu .png"></image>
+ <view>联系客服</view>
+</view>
+<view class="bodyy body-r" bindtap="shop">
+  <image src="../../image/dingdan.png"></image>
+ <view>我的订单</view>
+</view>
+<view class="bodyy body-r" bindtap="help">
+  <image src="../../image/bangzhu.png"></image>
+ <view>帮助中心</view>
+</view>
+<view class="bodyy body-r" bindtap="todo">
+  <image src="../../image/daiban .png"></image>
+ <view>待办事项</view>
+</view>
+</view>
+</view>

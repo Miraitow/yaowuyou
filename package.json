@@ -1,0 +1,21 @@
+{
+  "name": "qiqv-tab-bar-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vant-weapp": "^0.5.29"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "postcss-px2units": "^0.2.0",
+    "postcss-pxtransform": "^3.6.4"
+  }
+}

@@ -1,0 +1,25 @@
+<view >
+  <view class="wrap">
+    <view class="title">
+      联系客服
+    </view>
+    <view>
+      <view class="serviceCard">
+        <view class="serviceCard-inner">
+          <view class="icon" bindtap="gotoLike">
+          <van-icon class="icon" color="#00c399" name="sign" size="70rpx" /><view class="name">
+            定制药盒</view>
+        </view>
+        <view class="icon" bindtap="gotoCollection" style="margin-left: 68rpx;">
+          <van-icon class="icon" color="#00c399"  name="flag-o" size="70rpx" />
+          <view class="name">
+            上门维修</view>
+            </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button open-type="contact" class="bottom-question">在线客服</button>
+  <button open-type="feedback" class="bottom-question">反馈问题</button>
+</view>
+

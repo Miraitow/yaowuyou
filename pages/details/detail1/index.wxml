@@ -1,0 +1,93 @@
+<view>
+  <view class="box">
+  <view class="h1">我只是牙疼，怎么检查出了冠心病呢？</view>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;58岁的老王是个瓦匠，嗜烟、嗜酒，长得膀大腰圆，经常在小区小卖部喝酒打牌，但自从5天前喝完酒回家后，就感觉牙龈酸痛，干完活后加重。在当地就诊后未见任何好转，于是去了大医院就诊。</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牙科医生接诊后，没有发现牙龈炎、龋齿等情况，询问老王后得知有“高血压”病史，偶感胸闷，无胸痛、心悸、出汗。于是就让老王去检查心电图，老王很不理解，说牙痛和心脏有啥关系呀，嘟囔着走出诊断室去检查。
+</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;然而心电图结果显示急性下壁心肌梗死。老王很惊讶，牙痛怎么诊出心肌梗死了？
+</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;医生立即收入心内科住院治疗，急诊冠脉造影，显示：左回旋支闭塞（就是血管堵住了），予以冠脉支架植入，术后予以扩冠、抗凝、改善循环等对症治疗。
+</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;老王症状缓解后出院，但他怎么也想不明白，为什么牙疼居然诊断出心肌梗死了？
+</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;很多人以为冠心病的症状只有胸痛、胸闷，殊不知冠心病的症状还会在身体其它部位表现出来。这种其它部位的疼痛，经常会被患者忽视，也因此会导致误诊或漏诊，对于冠心病患者来说，这些症状要比胸痛、胸闷等典型症状更致命、更危险。
+</text>
+<view class="h2">冠心病为什么有牙痛症状？</view>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这是由于患者口腔细菌侵入牙龈和牙周组织引起局部炎症，机体产生的炎性细胞因子可加重炎症反应，损伤血管内皮细胞，导致血管调节功能障碍，最终造成心脑血管病。
+</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国外研究曾纳入100例急性心肌梗死患者的病例，结果显示，心肌梗死患者的口腔健康明显劣于健康人群。有随访长达14年的大型流行病学研究(n=9,760）发现，牙周病与冠心病风险升高呈相关性。
+</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;与一般的牙痛相比，冠心病表现出的牙痛往往是牙床的一侧或两侧疼痛，以左侧居多，常常难以确定具体是哪颗牙疼痛，有时候患者叙述并不是很清楚，也可能表现为牙痛连及面颊，但往往牙龈、脸颊不红肿。这时应该及时明确是否为牙齿本身原因引起的牙疼。
+</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果口腔科牙齿检查没有异常，如果又有因运动、情绪激动等引起牙疼的情况，特别是患者有高血压、高血脂、糖尿病等冠心病危险因素时，就需要警惕典型或非典型的冠心病心绞痛或者心梗了。
+</text>
+<view class="h2">除了牙痛，冠心病患者还有哪些症状？</view>
+<text class="text">1、耳痛</text>
+<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;冠心病患者可出现单侧耳痛，表现为一侧耳部有麻、胀感，或出现针刺样锐痛。
+</text>
+<text class="text">2、颈痛</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;冠心病患者可发生胸骨后疼痛，而一侧或双侧颈部的跳痛或窜痛。
+</text>
+<text class="text">3、咽喉痛</text>
+<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;冠心病可表现为咽部或喉头部位疼痛，并沿食道、气管部向下放射。
+</text>
+<text class="text">4、面颊痛</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;冠心病可表现为面颊部的疼痛，多为锐痛或窜痛，多伴有神经紧张、心前区憋闷不适的症状。
+</text>
+<text class="text">5、上肢内侧痛</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;冠心病可表现为左侧或双侧上肢内侧疼痛，由肩、臂部向肘、腕、手指部放射，但有时亦可表现为肘、腕、手指单独疼痛。
+</text>
+<text class="text">6、下肢痛</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;冠心病可发生单侧或双侧下肢痛，疼痛由大腿部向足部放射。
+</text>
+<text class="text">7、肩痛</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;冠心病可表现为左肩胛骨部疼痛，疼痛反复出现，久治不愈。
+</text>
+<text class="text">8、上腹部疼痛</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;冠心病可出现上腹部或剑突下或右上腹疼痛，疼痛呈跳痛、灼痛、针刺样痛，并伴有沉重感。
+</text>
+<text class="text">9、头痛</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;冠心病可表现为不同部位神经系统障碍，有时可发生持续性、压迫性或阵发性头痛或偏头痛，特别是中老年患者若出现不明原因的头痛，应考虑心绞痛或心肌梗死的可能。
+</text>
+<view class="h2">预防心血管病，应从口腔健康开始</view>
+<text class="text">1、每天早晚刷牙</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;刷牙是一种成本极低的预防心血管病的措施，最好每天三餐后就要刷牙，每次刷牙时间控制在两分钟左右，以上下刷牙的方式保护牙龈，刷牙时别太用力。这样不仅有利于口腔清新，还能保持牙齿表面清洁，预防细菌滋生。国外研究显示，每天至少刷2次牙的人，未来发生心血管事件的风险可降低10%。
+</text>
+<text class="text">2、洗牙半年一次</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+多数急性心梗患者中都存在不同程度的口腔工生不良和牙病，其中最常见的牙病是牙周炎和牙周脓肿。因此建议心血管病患者，除常规的刷牙漱口外，最好半年请牙科医生用超声洁牙仪，将牙齿周围的牙石、牙垢及牙面菌斑彻底清除，减少口腔中的致病菌。
+</text>
+<text class="text">3、常漱口</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当进食后最好要用清水漱口，否则会有食物残渣存留在牙齿之间，最终形成牙龈炎或牙周炎，有条件者可常备漱口水。
+</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;患有口腔疾病的患者应在医生指导下选择漱口水，不宜自己随便购买使用；当口腔疾病痊愈后，就应当停止使用,以免引起口腔内正常菌群失调。
+</text>
+<text class="text">4、正确使用牙线</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具体方法是先截取一截20~30cm长的牙线，绕在两手的中指和食指上，用大拇指和食指拉住2cm左右的牙线，将牙线绷紧，用自己习惯的姿势从牙齿的咬合面进入牙缝隙，贴着牙面缓慢滑进牙龈的最低位置，上下提拉牙线即可。
+</text>
+<text class="text">5、冲牙器</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;冲牙器是一种比较新的口腔清洁器具，对牙刷清洁不到的部位如齿缝、牙龈下、窝沟、龋洞等非常有效，适用于有口气、牙龈出血、牙龈炎、牙周炎以及派代正畸矫正器的患者。
+</text>
+<text class="text">6、关注舌苔卫生</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在刷牙时用软毛刷轻轻刷舌苔，也可以准备一个专用的舌苔刷，可以保护舌头，避免损伤舌乳头，出现味觉减退这样的不良后果。
+</text>
+<text class="text">7、定期口腔检查</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;建议每半年或一年进行口腔全面检查，如果发现有龋齿的问题，要尽早进行治疗。
+</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;只要是运动以后出现的疼，休息以后就好转，不管是发生在牙、下颌、咽喉、肚子、肩背还是头部，都要引起大家的警惕，及时到医院就诊，不要耽误。
+</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牙疼被要求检查心电图真的不是医生在开玩笑，乱开检查单。
+</text>
+  </view>
+  <view class="shop">
+    <view class="inner" bindtap="gotoshop">
+      <van-card
+  num="1"
+  price="99.00"
+  title="【大水箱】 冲牙器洗牙器智能电动 水牙线新款手持便携式洁牙器W07"
+  thumb="/image/shop/shop.jpg"
+/>
+<text class="text">注：点此链接将自动跳转京东应用商品界面</text>
+    </view>
+  </view>
+</view>

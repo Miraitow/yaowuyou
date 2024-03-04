@@ -1,0 +1,97 @@
+<!--components/calendar/calendar.wxml-->
+<view>
+  <view class="all">
+<!-- 头部 -->
+<view class="title-wrap">
+    <view class="change-date">
+        <view class="prev" bindtap="changeMonthFun" data-type="prev">
+            <image src="../../image/prev.png" mode="" />
+        </view>
+        <view class="year-mouth">
+            {{year}}年 {{month}}月
+        </view>
+        <view clstyle="next" bindtap="changeMonthFun" data-type="next">
+            <image src="../../image/next.png" mode="" />
+        </view>
+    </view>
+    <view class="week">
+        <text wx:for="{{weeksArr}}" wx:key="*this">{{item}}</text>
+    </view>
+</view>
+<!-- 日期 -->
+<view class="date-wrap">
+    <!-- 上个月日期 -->
+    <view wx:for="{{lastMonthDays}}" wx:key="*this" class="mouth-date last-mouth">
+        <text class="day-text">{{item.date}}</text>
+        <!-- <text class="day-dot"></text> -->
+    </view>
+    <!-- 当月日期 -->
+    <view class="mouth-date current-mouth" wx:for="{{nowMonthDays}}" wx:key="*this" bindtap="selectDate" data-item="{{item}}" data-type="nowMonthDays" data-index="{{index}}" >
+       <view class="day-box {{item.isNowMonthDay?'active':''}}">
+        <text class="day-text">{{item.date}}</text>
+        <text class=" {{item.color1?'day-dot1':'not-dot'}}"></text>
+        <text class=" {{item.color2?'day-dot2':'not-dot'}}"></text>
+        <text class=" {{item.color3?'day-dot3':'not-dot'}}"></text>
+       </view>
+    </view>
+    <!-- 下个月日期 -->
+    <view class="mouth-date next-mouth" wx:for="{{nextMonthDays}}" wx:key="*this">
+        <text class="day-text">{{item.date}}</text>
+        <!-- <text class="day-dot"></text> -->
+    </view>
+</view>
+
+<view class="footer">
+<view class="foot">
+  <view class="day-dot day-dot-g"></view>
+  <text>准时服药</text>
+</view>
+<view class="foot">
+  <view class="day-dot day-dot-o"></view>
+  <text>漏服</text>
+</view>
+<view class="foot">
+  <view class="day-dot day-dot-r"></view>
+  <text>未服</text>
+</view>
+</view>
+
+<!-- 月服药报告 -->
+<van-divider
+  contentPosition="center"
+  customStyle="color: #1F1F1F; border-color: #ccc; font-size: 18px;"
+>
+  月服药报告
+</van-divider>
+<view class="baogao">
+<view class="baogao-l">
+  <van-circle value="{{ value1 }}" text="{{ value1 }}%" size="70"  layer-color="#eeeeee"
+  color="#00c399"/>
+</view>
+<view class="baogao-m">
+  <van-circle value="{{value2 }}" text="{{ value2 }}%" size="70"  layer-color="#eeeeee"
+  color="#ffb800"/>
+</view>
+<view class="baogao-r">
+  <van-circle value="{{ value3 }}" text="{{ value3 }}%" size="70"  layer-color="#eeeeee"
+  color="#ff0000"/>
+</view>
+</view>
+<!-- 详细记录 -->
+<van-divider
+  contentPosition="center"
+  customStyle="color: #1F1F1F; border-color: #ccc; font-size: 18px;"
+>
+详细记录
+</van-divider>
+<view class="name">主责护工：王鱼鸢</view>
+<view class="detail">
+  <van-steps
+  steps="{{ steps }}"
+  active="{{ active }}"
+  direction="vertical"
+  active-color="#ee0a24"
+/>
+</view>
+</view>
+</view>

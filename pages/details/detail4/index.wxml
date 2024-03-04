@@ -1,0 +1,39 @@
+<view>
+  <view class="box">
+  <view class="h1">风湿、类风湿到底怎么回事？患者在运动和饮食中该注意什么？</view>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;风湿、类风湿是以关节疼痛、肿胀为典型症状，进展性强，可造成关节变形、甚至致残的慢性疾病。风湿、类风湿的治疗相较于其他常见疾病较为困难，常见治疗手段以药物控制为主，无法根治，许多患者把这种病称作“不死的癌症”。</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那么到底风湿、类风湿的患病原因是什么？如果不能根治，患者在日常的锻炼、饮食中又该注意什么呢？阅读本篇，带您一一了解清楚。。</text>
+<view class="h2">风湿、类风湿的主要病因是什么？</view>
+<text class="text">1、环境因素</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那么到底风湿、类风湿的患病原因是什么？如果不能根治，患者在日常的锻炼、饮食中又该注意什么呢？阅读本篇，带您一一了解清楚。。</text>
+<text class="text">2、免疫因素</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;风湿、类风湿发病有概率为有感染原（细菌、病毒、支原体等）侵入关节腔，以病原体作为抗原刺激滑膜或局部引流淋巴结中的浆细胞，可以产生特异性免疫球蛋白G抗体。抗原抗体复合物形成后，抗体即转变为异体，再刺激浆细胞就会产生新的抗体，这就是类风湿因子。</text>
+<text class="text">3、遗传因素</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;风湿、类风湿在某些家族中发病率较高，在人群调查中，发现人类白细胞抗原（HLA）-DR4与RF阳性患者有关。HLA研究发现DW4与RA的发病有关，患者中70%HLA-DW4阳性，患者具有该点的易感基因，因此遗传可能在发病中起重要作用。</text>
+<view class="h2">风湿、类风湿的主要病因是什么？</view>
+<text class="text">1、常做关节拉伸运动</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;风湿、类风湿比较常见的一个症状就是疼痛，这往往让患者十分痛苦。但经过相关研究发现，患者每天若能做一些拉伸关节的运动，可减少发生关节疼痛的次数。做关节拉伸运动时，应从上至下，逐步拉伸全身关节，拉伸的强度以不引起疼痛为度。早晨可以先冲个热水澡缓解关节僵硬，然后再做拉伸运动，比如做一些捏拳、分并手指等动作。</text>
+<text class="text">2、保护关节注重小事</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大家应该知道，风湿、类风湿主要所侵犯的就是我们的关节了，在锻炼和生活中，就要注意避免指关节受力过度，关键是在一些不起眼的小事上。</text>
+<text class="text">3、锻炼时常换体位</text>
+<text class="text" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对于风湿、类风湿患者，每周锻炼三次左右最好，锻炼的时间在三十分钟左右，可以进行的项目有骑自行车、游泳、举轻的哑铃等。刚开始锻炼时，可做一些短时间、低强度的运动，然后逐步增加锻炼的时间和强度。锻炼的过程中，应不断更换体位，避免一个关节长时间受力，如果感觉患处疼痛应立即停止锻炼。</text>
+<view class="h2">风湿、类风湿患者的饮食保养？</view>
+<text class="text">1、饮食应选择易消化的食物，烹调方法要清爽为主，少吃辛辣，油腻和生冷食物。</text>
+<text class="text">2、脂肪的摄入尽可能的减少，以及碳水化合物和蛋白质等热量来源。</text>
+<text class="text">3、如果身体热，应该多吃绿豆，西瓜和其他食物；如果是冷，你应该多吃羊肉或牛肉，但摄入量不宜过多。</text>
+<text class="text">4、如果阿司匹林，一定要在饭后服药，因为药物易伤脾胃，容易导致缺铁性贫血。</text>
+<text class="text">5、适当补充维生素A，C，D，E和钙，铁，铜，锌，硒等矿物质的食物，增强免疫力和抗氧化组织或贫血。 </text>
+<text class="text">6、减少过多的调味品摄入，例如重油重盐、腌制的食物等；多摄入钙质丰富的食物，如脱脂牛奶、豆腐等。</text>
+  </view>
+  <view class="shop">
+    <view class="inner" bindtap="gotoshop">
+      <van-card
+  num="1"
+  price="48.80"
+  title="【阿司匹林】 头痛神经关节肌肉痛神经痛痛经缓解轻疼痛"
+  thumb="/image/shop/shop4.jpg"
+/>
+<text class="text">注：点此链接将自动跳转京东应用商品界面</text>
+    </view>
+  </view>
+</view>

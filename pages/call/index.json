@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-index-bar": "../../miniprogram_npm/vant-weapp/index-bar/index",
+    "van-index-anchor": "../../miniprogram_npm/vant-weapp/index-anchor/index",
+    "van-cell":"../../miniprogram_npm/vant-weapp/cell/index",
+    "van-card": "../../miniprogram_npm/vant-weapp/card/index",
+    "van-swipe-cell": "../../miniprogram_npm/vant-weapp/swipe-cell/index",
+    "van-cell-group": "../../miniprogram_npm/vant-weapp/cell-group/index"
+  },
+  "navigationBarTitleText": "监护人联系"
+}

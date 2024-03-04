@@ -1,0 +1,47 @@
+.box{
+  width: 700rpx;
+  margin-top: 25rpx;
+  margin-left: 25rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  box-shadow:0 0 5px rgb(214, 209, 209);
+  background-color: #fff;
+}
+
+.title{
+  height: 70rpx;
+  position: relative;
+  border-bottom: 2rpx solid #eee;
+}
+.title image{
+  padding: 7rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+.p1{
+  position: absolute;
+  top: 50%;
+  font-weight: 700;
+  transform: translateY(-50%);
+}
+.pill{
+  padding: 10rpx;
+  font-size: 30rpx;
+}
+.p3{
+  float: right;
+  font-size: 28rpx;
+}
+
+.btn{
+width: 150rpx;
+height: 50rpx;
+position: absolute;
+top: 50%;
+right: 20rpx;
+transform: translateY(-50%);
+border-radius: 50rpx;
+color: #00c399;
+text-align: center;
+line-height: 50rpx;
+}

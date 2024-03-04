@@ -1,0 +1,45 @@
+.box{
+  width: 92%;
+  margin-top: 30rpx;
+  position: absolute;
+  left: 50%;
+  top: 3%;
+  transform: translateX(-50%);
+  position: relative;
+
+}
+.h1{
+  font-weight: 700;
+  font-size: 40rpx;
+}
+.h2{
+  font-weight: 700;
+  font-size: 35rpx;
+}
+.text{
+  font-size: 28rpx;
+display: block;
+margin: 20rpx 0 20rpx 0;
+}
+
+.shop{
+  position: absolute;
+  width: 90%;
+  height: 400rpx;
+  margin-top: 30rpx ;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.van-card__title{
+  font-size: 30rpx;
+  line-height: 50rpx!important;
+}
+.shop .inner{
+ height: 230rpx;
+ border-radius: 15rpx;
+ overflow: hidden;
+ border: 2rpx solid #ccc;
+ background-color: #fff;
+ box-shadow:0 0 5px rgb(201, 196, 196);
+
+}
