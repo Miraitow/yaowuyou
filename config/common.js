@@ -1,7 +1,7 @@
 export const USER_PAGE = {
   memberTabbarList : [
     {
-      "pagePath": "pages/zixun/index",
+      "pagePath": "/pages/zixun/index",
       "text": "健康资讯",
       "iconPath": "/image/zixun-dark.png",
       "selectedIconPath": "/image/zixun.png",
