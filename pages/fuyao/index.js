@@ -57,7 +57,7 @@ Page({
     let roldId = wx.getStorageSync('roldId');
     if(roldId == 0){
       this.getTabBar().setData({
-        selected: 2,
+        selected: 0,
         list:USER_PAGE.memberTabbarList
       })
     }else{
@@ -66,7 +66,6 @@ Page({
         list:USER_PAGE.adminTabbarList
       })
     }
-
   }
   },
 todo(){

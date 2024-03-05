@@ -1,7 +1,7 @@
-// import { request } from '../../request/index.js'
 import {USER_PAGE} from '../../config/common'
 Page({
   data: {
+    roldId: '',
     tabs: [
       {
         id: 0,
@@ -29,54 +29,10 @@ Page({
         isActive: false
       }
     ],
-    // todoList: [
-    //   {
-    //     thing: '今天上午去养老院看望老爸',
-    //     completed: true
-    //   },
-    //   {
-    //     thing: '记得给老爸买阿莫西林胶囊',
-    //     completed: true
-    //   },
-    //   {
-    //     thing: '下午联系护工',
-    //     completed: false
-    //   }
-    // ],
     todoThing: "",
     currentIndex: 0,
   },
-  gotodetail1(){
-    wx.navigateTo({
-      url: '../details/detail1/index'
-    })
-  },
-  // todoClick(e) {
-  //   let index = e.currentTarget.dataset.index;
-  //   this.setData({
-  //     [`todoList[${index}].completed`]: !this.data.todoList[index].completed
-  //   })
-  // },
-  // todoThingInput(e) {
-  //   this.setData({ todoThing: e.detail.value })
-  // },
-  // addClick() {
-  //   this.setData({
-  //     [`todoList[${this.data.todoList.length}]`]: {
-  //       thing: this.data.todoThing,
-  //       completed: false
-  //     },
-  //     todoThing: ''
-  //   })
-  // },
-  // deleteClick(e) {
-  //   let index = e.currentTarget.dataset.index;
-  //   this.data.todoList.splice(index, 1)
-  //   this.setData({
-  //     todoList: this.data.todoList
-  //   })
-  // },
-    /**
+      /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
@@ -95,6 +51,12 @@ Page({
       }
     }
   },
+  gotodetail1(){
+    wx.navigateTo({
+      url: '../details/detail1/index'
+    })
+  },
+
   gotodetail(){
     wx.navigateTo({
       url: '../details/detail/index'
