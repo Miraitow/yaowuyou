@@ -12,12 +12,12 @@
 	<!-- 右边 -->
 	<scroll-view class="right" scroll-y scroll-with-animation scroll-into-view="scroll-{{rightCur}}" bindscroll="scrollLink">
 		<!-- 重点： id="scroll-{{index}}"  这个必须要有 不然实现不了左边联动右边的效果-->
-		<view wx:for="{{list}}" wx:key="{{index}}" class="right-cont" id="scroll-{{index}}">
+		<view wx:for="{{list}}" wx:key="index" class="right-cont" id="scroll-{{index}}">
 			<view class="title">{{item.name}}</view>
 			<!-- <view class="content">
 				<view class="list-item" wx:for="{{item.list}}" wx:key="{{indexs}}" wx:for-index="indexs" wx:for-item="items">{{items}}</view>
 			</view> -->
-      <view  bindtap="gotoDetail" class="list-item" wx:for="{{item.list}}" wx:key="{{indexs}}" wx:for-index="indexs" wx:for-item="items">
+      <view  bindtap="gotoDetail" class="list-item" wx:for="{{item.list}}" wx:key="index" wx:for-index="indexs" wx:for-item="items">
         <view class="split">{{items}}</view>
       </view>
 		</view>

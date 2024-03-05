@@ -2,7 +2,6 @@
     "component": true,
     "usingComponents": {
       "van-circle": "../../miniprogram_npm/vant-weapp/circle/index",
-      "van-divider": "../../miniprogram_npm/vant-weapp/divider/index",
-      "van-steps": "../../miniprogram_npm/vant-weapp/steps/index"
+      "van-divider": "../../miniprogram_npm/vant-weapp/divider/index"
     }
 }

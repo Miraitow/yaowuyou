@@ -15,8 +15,7 @@
        </view>
       </view>
     </block>
-
-
+    
       <view style="width: 15vw; border-radius: 15vw;height: 15vw;" bindtap="onclick" class="btn">
         <image src="../../image/jiahao.png" class="image"></image>
       </view>

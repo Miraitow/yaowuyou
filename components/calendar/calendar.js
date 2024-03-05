@@ -6,16 +6,20 @@ Component({
     properties: {
       countdata:{
         type:Array,
-        value:[{zhunshi:{
+        value:[
+          {zhunshi:{
           type:Array,
           value:[]
-        }},{loufu:{
+        }},
+        {loufu:{
           type:Array,
           value:[]
-        }},{weifu:{
+        }},
+        {weifu:{
           type:Array,
           value:[]
-        }}]
+        }}
+      ]
     }
     },
 

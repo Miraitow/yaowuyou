@@ -28,11 +28,11 @@
   flex-direction: column;
 }
 
-.tab-bar-item image {
+.tab-bar-item .img {
   width: 54rpx;
   height: 54rpx;
 }
 
-.tab-bar-item view {
+ .tab-bar-item .text{
   font-size: 20rpx;
 }

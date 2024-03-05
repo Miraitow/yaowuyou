@@ -1,7 +1,8 @@
 import {USER_PAGE} from '../../config/common'
 Page({
   data: {
-    stepslist: [{
+    stepslist: [
+      {
      text1: "8:00",
      test:[
        {text2:"102房 张先生（已完成）",text3:[{text:"艾普拉唑肠溶片 & 饭后 1粒"},{text:"阿司匹林胶囊 & 饭后 1粒"}]},
