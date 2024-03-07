@@ -1,11 +1,17 @@
 <view>
-  <view class="logo">
+<view class="logo">
 <image src="/image/logo.png"></image>
 <view class="name">小药</view>
 <view class="xinxi">用心智造 方便快捷</view>
 </view>
 
-<view class="container " >
+  <view class="container">
+    <button bindtap="getPhoneNumber">获取手机号</button>
+    <view>{{phone}}</view>
+</view>
+
+
+<!-- <view class="container " >
 <view class="examine-role">
 <span bindtap="clickRole0"  style="{{myClassStyle0}}">监护人登录</span>
 <span bindtap="clickRole1" style="{{myClassStyle1}}">护工登录</span>
@@ -28,5 +34,5 @@
   <view  bindtap="clickRegister">立即注册</view>
 </view>
 </view>
-</view>
+</view> -->
 </view>

@@ -4,22 +4,17 @@
 <image src="../../image/geren.png"></image>
 </view>
 <view class="head">
-<view class="touxiang" wx:if="{{roldId == 0}}">
-  <image src="/image/yonghu.png" ></image>
+
+<view class="touxiang" >
+  <image src="{{userInfo.avatarUrl}}" ></image>
 </view>
-<view class="touxiang" wx:if="{{roldId == 1}}">
-  <image src="/image/hushi.png" ></image>
-</view>
-<view class="title" wx:if="{{roldId == 0}}">
-p002
-</view>
-<view class="title" wx:if="{{roldId == 1}}">
-admin
+<view class="title" >
+{{userInfo.nickName}}
 </view>
 <view class="icon">
   <!-- <image src="/image/dianhua1.png" /> -->
   <view class="tell">
-编辑查看个人资料
+查看个人资料
 </view>
 </view>
 <view class="arrow" bindtap="gerenxinxi">

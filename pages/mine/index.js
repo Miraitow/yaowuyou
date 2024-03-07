@@ -6,6 +6,7 @@ Page({
    */
   data: {
     roldId: '',
+    userInfo:''
   },
 
   /**
@@ -20,7 +21,8 @@ Page({
    */
   onReady: function () {
     this.setData({
-      roldId :wx.getStorageSync('roldId')
+      roldId :wx.getStorageSync('roldId'),
+      userInfo:wx.getStorageSync('userInfo')
     })
     console.log( this.data.roldId)
   },
