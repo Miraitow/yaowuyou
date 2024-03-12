@@ -11,225 +11,25 @@
 <!-- 联系人索引模块 -->
 <van-index-bar class="foot">
   <view>
-    <van-index-anchor index="A" />
 <van-swipe-cell
   id="swipe-cell"
   right-width="{{ 65 }}"
   async-close
   bind:close="onClose"
 >
-  <van-cell-group>
+  <van-cell-group wx:for="{{contactlist}}" wx:key="index"  wx:for-index="index" >
     <van-card
     class="touxiang"
-  desc="101房王多金儿子"
-  title="阿明"
+  desc="{{item.patientRoom}}房{{item.patientName}}{{item.patientGuardianRelation}}"
+  title="{{item.name}}"
   thumb="/image/touxiang1.jpg"
-  bindtap="detail"
+  bindtap="detail" data-index="{{index}}"
 />
   </van-cell-group>
   <view slot="right" class="right">删除</view>
 </van-swipe-cell>
 
-<van-swipe-cell
-  id="swipe-cell"
-  right-width="{{ 65 }}"
-  async-close
-  bind:close="onClose"
->
-  <van-cell-group>
-    <van-card
-    class="touxiang"
-  desc="103房张玉兰女儿"
-  title="阿红"
-  thumb="/image/touxiang2.jpg"
-  bindtap="touch"
-/>
-  </van-cell-group>
-  <view slot="right" class="right">删除</view>
-</van-swipe-cell>
-  </view>
-
-  <view>
-    <van-index-anchor index="B" />
-<van-swipe-cell
-  id="swipe-cell"
-  right-width="{{ 65 }}"
-  async-close
-  bind:close="onClose"
->
-  <van-cell-group>
-    <van-card
-    class="touxiang"
-  desc="102房xxx儿子"
-  title="B明"
-  thumb="/image/touxiang.png"
-/>
-  </van-cell-group>
-  <view slot="right" class="right">删除</view>
-</van-swipe-cell>
-
-<van-swipe-cell
-  id="swipe-cell"
-  right-width="{{ 65 }}"
-  async-close
-  bind:close="onClose"
->
-  <van-cell-group>
-    <van-card
-    class="touxiang"
-  desc="103房xxx女儿"
-  title="B红"
-  thumb="/image/touxiang.png"
-/>
-  </van-cell-group>
-  <view slot="right" class="right">删除</view>
-</van-swipe-cell>
-  </view>
-  <view>
-    <van-index-anchor index="C" />
-<van-swipe-cell
-  id="swipe-cell"
-  right-width="{{ 65 }}"
-  async-close
-  bind:close="onClose"
->
-  <van-cell-group>
-    <van-card
-    class="touxiang"
-  desc="102房xxx儿子"
-  title="C明"
-  thumb="/image/touxiang.png"
-/>
-  </van-cell-group>
-  <view slot="right" class="right">删除</view>
-</van-swipe-cell>
-
-<van-swipe-cell
-  id="swipe-cell"
-  right-width="{{ 65 }}"
-  async-close
-  bind:close="onClose"
->
-  <van-cell-group>
-    <van-card
-    class="touxiang"
-  desc="103房xxx女儿"
-  title="C红"
-  thumb="/image/touxiang.png"
-/>
-  </van-cell-group>
-  <view slot="right" class="right">删除</view>
-</van-swipe-cell>
-  </view>
-  <view>
-    <van-index-anchor index="D" />
-<van-swipe-cell
-  id="swipe-cell"
-  right-width="{{ 65 }}"
-  async-close
-  bind:close="onClose"
->
-  <van-cell-group>
-    <van-card
-    class="touxiang"
-  desc="102房xxx儿子"
-  title="D明"
-  thumb="/image/touxiang.png"
-/>
-  </van-cell-group>
-  <view slot="right" class="right">删除</view>
-</van-swipe-cell>
-
-<van-swipe-cell
-  id="swipe-cell"
-  right-width="{{ 65 }}"
-  async-close
-  bind:close="onClose"
->
-  <van-cell-group>
-    <van-card
-    class="touxiang"
-  desc="103房xxx女儿"
-  title="D红"
-  thumb="/image/touxiang.png"
-/>
-  </van-cell-group>
-  <view slot="right" class="right">删除</view>
-</van-swipe-cell>
-  </view>
-  <view>
-    <van-index-anchor index="E" />
-<van-swipe-cell
-  id="swipe-cell"
-  right-width="{{ 65 }}"
-  async-close
-  bind:close="onClose"
->
-  <van-cell-group>
-    <van-card
-    class="touxiang"
-  desc="102房xxx儿子"
-  title="E明"
-  thumb="/image/touxiang.png"
-/>
-  </van-cell-group>
-  <view slot="right" class="right">删除</view>
-</van-swipe-cell>
-
-<van-swipe-cell
-  id="swipe-cell"
-  right-width="{{ 65 }}"
-  async-close
-  bind:close="onClose"
->
-  <van-cell-group>
-    <van-card
-    class="touxiang"
-  desc="103房xxx女儿"
-  title="E红"
-  thumb="/image/touxiang.png"
-/>
-  </van-cell-group>
-  <view slot="right" class="right">删除</view>
-</van-swipe-cell>
-  </view>
-  <view>
-    <van-index-anchor index="F" />
-<van-swipe-cell
-  id="swipe-cell"
-  right-width="{{ 65 }}"
-  async-close
-  bind:close="onClose"
->
-  <van-cell-group>
-    <van-card
-    class="touxiang"
-  desc="102房xxx儿子"
-  title="F明"
-  thumb="/image/touxiang.png"
-/>
-  </van-cell-group>
-  <view slot="right" class="right">删除</view>
-</van-swipe-cell>
-
-<van-swipe-cell
-  id="swipe-cell"
-  right-width="{{ 65 }}"
-  async-close
-  bind:close="onClose"
->
-  <van-cell-group>
-    <van-card
-    class="touxiang"
-  desc="103房xxx女儿"
-  title="F红"
-  thumb="/image/touxiang.png"
-/>
-  </van-cell-group>
-  <view slot="right" class="right">删除</view>
-</van-swipe-cell>
   </view>
 </van-index-bar>
-
 </view>
 

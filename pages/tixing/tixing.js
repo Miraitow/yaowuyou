@@ -1,87 +1,186 @@
-Page({
-  /**
-   * 页面的初始数据
-   */
-  data: {
-    show1:false,     //控制弹出层是否弹出的值
-    show2:false,   
-    show3:false,
-    show4:false,      
-    columns1: ['7:00','7:30','8:00','8:30','9:00','9:30','10:00','10:30','11:00','11:30','12:00','12:30','13:00','13:30','14:00','14:30','15:00','15:30','16:00','16:30','17:00','17:30','18:00','18:30','19:00','19:30','20:00','20:30','21:00','21:30','22:00','22:30'],   //选择器中的值
-    columns2: ['1粒','2粒','3粒','4粒','5粒','6粒'],   //选择器中的值
-    columns3: ['仅震动','震动加响铃'],   //选择器中的值
-    columns4: ['每天','自定义'],   //选择器中的值
-    time:''   ,     //选择时间之后的值进行页面显示
-    num:'' ,
-    count:'',
-    way:''
-  },
-  showPopup1(e){      //点击选择时间，打开弹出层（选择器）
-       this.setData({show1:true})
-     },
-     showPopup2(e){      //点击选择剂量，打开弹出层（选择器）
-      this.setData({show2:true})
-    },
-    showPopup3(e){      //点击提醒方式，打开弹出层（选择器）
-      this.setData({show3:true})
-    },
-    showPopup4(e){      //点击选择重复次数，打开弹出层（选择器）
-      this.setData({show4:true})
-    },
-  onClose1() {     //点击空白处开闭弹出层（选择器）及选择器左上角的取消
-     this.setData({ show1: false });
-   },
-   onClose2() {     
-    this.setData({ show2: false });
-  },
-  onClose3() {   
-    this.setData({ show3: false });
-  },
-  onClose4() {     
-    this.setData({ show4: false });
-  },
-  onConfirm1(e){    //选择器右上角的确定，点击确定获取值
-    this.setData({
-      time:e.detail.value,
-      show1:false
-    })
-  },
-  onConfirm2(e){    //选择器右上角的确定，点击确定获取值
-    this.setData({
-      num:e.detail.value,
-      show2:false
-    })
-  },
-  onConfirm3(e){    //选择器右上角的确定，点击确定获取值
-    this.setData({
-      way:e.detail.value,
-      show3:false
-    })
-  },
-  onConfirm4(e){    //选择器右上角的确定，点击确定获取值
-    this.setData({
-      count:e.detail.value,
-      show4:false
-    })
-  },
- submitNewStuInfo(e){
-   //表单输入框提交的内容包含在e参数中
-   console.log(e.detail.value);
-   if(e.detail.value.time == ''||e.detail.value.name == ''||e.detail.value.medicine == ''||e.detail.value.num == ''||e.detail.value.count == ''||e.detail.value.way == ''){
-    wx.showToast({
-      title: '请完整填写信息',
-      icon: 'error',
-      duration: 2000
-    })
-   }
-   else{
-    wx.showToast({
-      title: '保存成功',
-      icon: 'success',
-      duration: 2000
-    })
-   }
-   
- },
+const {
+  patientInfo
+} = require("../../http/index.js")
+const {
+  medicines
+} = require("../../http/index.js")
+const {
+  addReminds
+} = require("../../http/index.js")
 
+Page({
+  data: {
+    show2: false,
+    show3: false,
+    show4: false,
+    show5: false,
+
+    columns2: ['1', '2', '3', '4', '5', '6', '7', '8'],
+    columns3: ['仅震动', '震动加响铃'],
+    columns4: ['每天', '每周', '每月'],
+
+    remindTime: '',
+    medicineDosage: '',
+    patientId: '',
+    patient: '',
+    medicineId: '',
+    medicine: '',
+    patientIds: [],
+    patientNames: [],
+    medicineIds: [],
+    medicineNames: [],
+    repetitionRate: '',
+    repetitionRateid: '',
+    repetitionRateids: ['1', '2', '3'],
+    remindMethod: '',
+    remindMethodid: '',
+    remindMethodids: ['1', '2', ],
+    description: '',
+  },
+
+  onLoad() {
+    const userId = wx.getStorageSync('user-id');
+    patientInfo(userId).then((res) => {
+      let patientlist = res.data.data
+      this.setData({
+        patientIds: patientlist.map(item => item.patientId),
+        patientNames: patientlist.map(item => item.patientName),
+      })
+    })
+  },
+
+  showPopup2(e) { //点击选择剂量
+    this.setData({
+      show2: true
+    })
+  },
+  showPopup3(e) { //点击提醒方式
+    this.setData({
+      show3: true
+    })
+  },
+  showPopup4(e) { //点击选择重复次数
+    this.setData({
+      show4: true
+    })
+  },
+  showPopup5(e) {
+    this.setData({
+      show5: true
+    })
+  },
+  showPopup6(e) {
+    this.setData({
+      show6: true
+    })
+  },
+
+  onClose2() {
+    this.setData({
+      show2: false
+    });
+  },
+  onClose3() {
+    this.setData({
+      show3: false
+    });
+  },
+  onClose4() {
+    this.setData({
+      show4: false
+    });
+  },
+  onClose5() {
+    this.setData({
+      show5: false
+    });
+  },
+  onClose6() {
+    this.setData({
+      show6: false
+    });
+  },
+
+  onConfirm2(e) {
+    this.setData({
+      medicineDosage: e.detail.value,
+      show2: false
+    })
+  },
+  onConfirm3(e) {
+    const idx = e.detail.index;
+    this.setData({
+      remindMethod: e.detail.value,
+      remindMethodid: this.data.remindMethodids[idx],
+      show3: false
+    })
+  },
+  onConfirm4(e) {
+    const idx = e.detail.index;
+    this.setData({
+      repetitionRate: e.detail.value,
+      repetitionRateid: this.data.repetitionRateids[idx],
+      show4: false
+    })
+  },
+  onConfirm5(e) {
+    const idx = e.detail.index;
+    this.setData({
+      patientId: e.detail.value,
+      patient: this.data.patientIds[idx],
+      show5: false
+    })
+    medicines(this.data.patientIds[idx]).then((res) => {
+      let medicinelist = res.data.data
+      console.log(medicinelist);
+      this.setData({
+        medicineIds: medicinelist.map(item => item.medicineId),
+        medicineNames: medicinelist.map(item => item.medicineName),
+      })
+    })
+  },
+  onConfirm6(e) {
+    const idx = e.detail.index;
+    this.setData({
+      medicineId: e.detail.value,
+      medicine: this.data.medicineIds[idx],
+      show6: false
+    })
+  },
+  submitNewStuInfo(e) {
+    //表单输入框提交的内容包含在e参数中
+    console.log(e.detail.value);
+    if (e.detail.value.remindTime == '' || e.detail.value.patientId == '' || e.detail.value.medicineId == '' || e.detail.value.medicineDosage == '' || e.detail.value.remindMethod == '' || e.detail.value.repetitionRate == '') {
+      wx.showToast({
+        title: '请完整填写信息',
+        icon: 'error',
+        duration: 2000
+      })
+    } else {
+      const obj = {
+        remindTime: this.data.remindTime,
+        patientId: this.data.patient,
+        medicineId: this.data.medicine,
+        medicineDosage: this.data.medicineDosage,
+        repetitionRate: this.data.repetitionRateid,
+        remindMethod: this.data.remindMethodid,
+        description: this.data.description
+      }
+      //  console.log(obj);
+      addReminds(obj).then((res) => {
+        if (res.data.code === 200) {
+          this.setData({
+            remindTime: '',
+            medicineDosage: '',
+            description: '',
+          })
+          wx.showToast({
+            title: '保存成功',
+            icon: 'success',
+            duration: 2000
+          })
+        }
+      })
+    }
+  },
 })

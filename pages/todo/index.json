@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "van-radio": "../../miniprogram_npm/vant-weapp/radio/index"
+  },
   "navigationBarTitleText": "待办"
 }

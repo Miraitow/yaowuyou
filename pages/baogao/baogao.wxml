@@ -2,39 +2,39 @@
 <view class="box1">
 <view class="inner">
 <p class="p1">体重</p>
-<p class="p2">62.4kg</p>
+<p class="p2">{{message.weight}}kg</p>
 </view>
 <view class="inner">
 <p class="p1">体温</p>
-<p class="p2">36.4℃</p>
+<p class="p2">{{message.temperature}}℃</p>
 </view>
 <view class="inner">
 <p class="p1">听力</p>
-<p class="p2">正常</p>
+<p class="p2 {{message.hearing == 1 ? '' : 'yellow'}}">{{message.hearing == 1 ? '正常' : '异常'}}</p>
 </view>
 <view class="inner">
 <p class="p1 ">饮食</p>
-<p class="p2 yellow">厌食</p>
+<p class="p2 {{message.diet == 1 ? '' : 'yellow'}}">{{message.diet == 1 ? '正常' : '异常'}}</p>
 </view>
 <view class="inner">
 <p class="p1">智力</p>
-<p class="p2">正常</p>
+<p class="p2 {{message.intellect == 1 ? '' : 'yellow'}}">{{message.intellect == 1 ? '正常' : '异常'}}</p>
 </view>
 <view class="inner">
 <p class="p1">血糖</p>
-<p class="p2">正常</p>
+<p class="p2 {{message.bloodSugar == 1 ? '' : 'yellow'}}">{{message.bloodSugar == 1 ? '正常' : '异常'}}</p>
 </view>
 <view class="inner">
 <p class="p1">血压</p>
-<p class="p2">正常</p>
+<p class="p2 {{message.bloodPressure == 1 ? '' : 'yellow'}}">{{message.bloodPressure == 1 ? '正常' : '异常'}}</p>
 </view>
 <view class="inner">
 <p class="p1">心率</p>
-<p class="p2">正常</p>
+<p class="p2 {{message.heartRate == 1 ? '' : 'yellow'}}">{{message.heartRate == 1 ? '正常' : '异常'}}</p>
 </view>
 </view>
   <view class="box2">
 <span class="jilu">详细记录：</span>
-<span class="detail">王先生最近吃的少，有点厌食倾向。</span>
+<span class="detail">{{message.detailRecord}}</span>
 </view>
 </view>

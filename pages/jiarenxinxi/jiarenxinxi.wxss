@@ -8,11 +8,11 @@
 }
 .top{
   width: 100%;
-  height: 330rpx;
+  /* height: 300rpx; */
 }
 .top .top_l{
   width: 36%;
-  height: 330rpx;
+  /* height: 300rpx; */
 }
 .top .top_l image{
   width: 200rpx;
@@ -21,7 +21,7 @@
 }
 .top .top_r{
   width: 64%;
-  height: 320rpx;
+  /* height: 300rpx; */
   position: absolute;
   top: 10rpx;
   right: 0;

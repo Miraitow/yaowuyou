@@ -1,32 +1,118 @@
 import {USER_PAGE} from '../../config/common'
+const {medicineReminds} = require("../../http/index.js")
+const {confirmRecords} = require("../../http/index.js")
+
 Page({
   data: {
-    stepslist: [
+    // remindList:[],
+    show:0,
+    remindList: [
       {
-     text1: "8:00",
-     test:[
-       {text2:"102房 张先生（已完成）",text3:[{text:"艾普拉唑肠溶片 & 饭后 1粒"},{text:"阿司匹林胶囊 & 饭后 1粒"}]},
-       {text2:"103房 张女士（已完成）",text3:[{text:"盐酸雷尼替丁胶囊 & 饭后 1粒"}]},]
-      },{
-        text1:"8:30",
-        test:[
-          {text2:"101房 王先生（已完成）",text3:[{text:"易顺缓释胶囊 & 饭后 2粒"}]},
-          {text2:"101房 刘女士（已完成）",text3:[{text:"阿司匹林胶囊 & 饭后 1粒"}]},
-          {text2:"103房 张女士（已完成）",text3:[{text:"解热镇痛抗炎药 & 饭后 2粒"},{text:"阿莫西林胶囊 & 饭后 1粒"}]}
+        "remindTime": "2016-06-14 17:50:45",
+        "patientList": [
+          {
+            "patientId": 1,
+            "patientName": "老王",
+            "patientRoom": "101房",
+            "medicineList": [
+              {
+                "remindId": 1,
+                "medicineId": 2,
+                "medicineName": "感冒灵",
+                "medicineDosage": 2,
+                "medicineUnit": "袋"
+              },
+              {
+                "remindId": 3,
+                "medicineId": 3,
+                "medicineName": "阿莫西林",
+                "medicineDosage": 2,
+                "medicineUnit": "粒"
+              }
+            ]
+          },
+          {
+            "patientId": 2,
+            "patientName": "老张",
+            "patientRoom": "103房",
+            "medicineList": [
+              {
+                "remindId": 2,
+                "medicineId": 3,
+                "medicineName": "感冒灵",
+                "medicineDosage": 2,
+                "medicineUnit": "袋"
+              }
+            ]
+          }
         ]
-      },{
-        text1:"12:30",
-        test:[
-          {text2:"102房 张先生",text3:[{text:"枸橼酸莫沙必利片 & 饭前 2粒"}]}
-        ]
-      },{
-        text1:"13:30",
-        test:[
-          {text2:"101房 王先生",text3:[{text:"艾普拉唑肠溶片 & 饭后 1粒"}]},
-          {text2:"101房 刘女士",text3:[{text:"阿司匹林胶囊 & 饭后 1粒"}]}
+      },
+      {
+        "remindTime": "2013-03-14 17:50:45",
+        "patientList": [
+          {
+            "patientId": 1,
+            "patientName": "老王",
+            "patientRoom": "101房",
+            "medicineList": [
+              {
+                "remindId": 1,
+                "medicineId": 1,
+                "medicineName": "阿莫西林",
+                "medicineDosage": 2,
+                "medicineUnit": "粒"
+              }
+            ]
+          }
         ]
       }
     ]
+  },
+
+  checkconfirm(e){
+     // 获取点击的确认按钮的数据
+     const remindId = e.currentTarget.dataset.remindId;
+     const medicineId = e.currentTarget.dataset.medicineId;
+     const patientId = e.currentTarget.dataset.patientId;
+    let remindList = this.data.remindList.map(remind => {
+      if (remind.patientList) {
+        remind.patientList = remind.patientList.map(patient => {
+          if (patient.patientId === patientId) {
+            patient.medicineList = patient.medicineList.map(medicine => {
+              if (medicine.medicineId === medicineId) {
+                // 添加一个字段来标记药品已经确认
+                medicine.confirmed = true;
+              }
+              return medicine;
+            });
+          }
+          return patient;
+        });
+      }
+      return remind;
+    });
+
+    // 更新data中的remindList
+    this.setData({
+      remindList: remindList
+    });
+
+
+    const medicineTime = new Date().toJSON().substring(0, 10) + ' ' + new Date().toTimeString().substring(0,8);
+    let records = e.currentTarget.dataset;
+    records['medicineTime'] = medicineTime;
+    confirmRecords(records).then((res)=>{
+      //  console.log(res);
+      if(res.data.code === 200){
+        this.setData({
+          show:1,
+        })
+        wx.showToast({
+          title: '确认成功',
+          icon:'success',
+        })
+      }
+    })
   },
 
   onclick() {
@@ -35,23 +121,17 @@ Page({
     })
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
+  // onLoad: function (options) {
+  //   const userId = wx.getStorageSync('user-id');
+  //   const medicinedate = new Date().toJSON().substring(0, 10);
+  //   medicineReminds(userId,medicinedate).then((res)=>{
+  //     // console.log(res);
+  //     this.setData({
+  //       remindList:res.data.data
+  //     })
+  //   })
+  // },
 
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
   onShow: function () {
     if (typeof this.getTabBar === 'function' && this.getTabBar()) {
     let roldId = wx.getStorageSync('roldId');
@@ -68,10 +148,4 @@ Page({
     }
   }
   },
-todo(){
-  wx.navigateTo({
-    url: '../todo/index'
-  })
-}
-
 })

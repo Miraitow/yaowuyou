@@ -52,12 +52,12 @@ handleshow(){
    show: this.data.show
  })
 },
-cellphoneChange:function(e){
+cellphoneChange(e){
 this.setData({
   cellphone:e.detail.value
 })
 },
-passwordChange:function(e){
+passwordChange(e){
   this.setData({
     password:e.detail.value
   })
@@ -74,10 +74,33 @@ clickRegister(){
     })
   }
 },
-handlelogin:function(param){
-  console.log(param);
+handlelogin(param){
   userlogin(param).then((res)=>{
-    console.log(res);
+    if(res.data.code === 200){
+      wx.setStorageSync('user-id', res.data.data.userId);
+      if(this.data.role == 0){
+        wx.reLaunch({
+          url: '../zixun/index',
+        })
+      }
+      else{
+        wx.reLaunch({
+          url: '../fuyao/index',
+        })
+      }
+    }
+    else if(res.data.code === 201){
+      wx.showToast({
+        title: '该用户未注册',
+        icon:'error'
+      })
+    }
+    else{
+      wx.showToast({
+        title: '密码错误',
+        icon: 'error',
+      })
+    }
   })
 },
  clickLogin() {
@@ -96,16 +119,10 @@ handlelogin:function(param){
     }
     if(this.data.role==0){
       wx.setStorageSync('roldId', 0);
-      this.handlelogin(form),
-      wx.reLaunch({
-            url: '../zixun/index',
-          })
+      this.handlelogin(form);
     }else{
       wx.setStorageSync('roldId', 1);
-      this.handlelogin(form),
-      wx.reLaunch({
-            url: '../fuyao/index',
-          })
+      this.handlelogin(form)
     }
     if(!wx.getStorageSync('userInfo')){
       this.getUserProfile();
@@ -113,5 +130,3 @@ handlelogin:function(param){
   }
 }
 })
-
-

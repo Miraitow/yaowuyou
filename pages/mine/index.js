@@ -6,14 +6,14 @@ Page({
    */
   data: {
     roldId: '',
-    userInfo:''
+    userInfo:'',
+    // todolist:'',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
- 
+  onLoad () {
   },
 
   /**
@@ -22,9 +22,8 @@ Page({
   onReady: function () {
     this.setData({
       roldId :wx.getStorageSync('roldId'),
-      userInfo:wx.getStorageSync('userInfo')
+      userInfo:wx.getStorageSync('userInfo'),
     })
-    console.log( this.data.roldId)
   },
 
   /**

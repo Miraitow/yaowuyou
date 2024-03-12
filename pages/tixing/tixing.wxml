@@ -1,35 +1,35 @@
 <view>
-  <!-- <van-toast id="van-toast" /> -->
 <form bindsubmit="submitNewStuInfo">
 <van-cell-group >
-  <view bindtap="showPopup1" class="head">
+  <view  class="head">
    <van-field
-   name="time"
+    name="remindTime"
+    model:value="{{remindTime}}"
     label="服药时间"
     title-width="8em"
-    placeholder="选择时间"
-    value="{{time}}"
+    placeholder="如:2024-03-12 09:00:00"
     required
-    readonly
+    clearable
   />
   </view>
- <view class="head">
+  <view bindtap="showPopup5" class="head">
   <van-field
-    name="name"
+    name="patientId"
     label="服药人员"
-    maxlength="11"
+    value="{{patientId}}"
     title-width="8em"
     placeholder="如：101房王先生"
     required
     clearable
   />
  </view>
-  <view class="head">
+  <view bindtap="showPopup6" class="head">
     <van-field
-    name="medicine"
+    name="medicineId"
     label="服用药品"
     maxlength="11"
     title-width="8em"
+    value="{{medicineId}}"
     placeholder="请输入药品名称"
     required
     clearable
@@ -37,11 +37,11 @@
   </view>
   <view bindtap="showPopup2" class="head">
    <van-field
-   name="num"
+   name="medicineDosage"
     label="服用剂量"
     title-width="8em"
-    placeholder="选择剂量"
-    value="{{num}}"
+    placeholder="最小单位，如：包、粒等"
+    value="{{medicineDosage}}"
     required
     readonly
   />
@@ -51,28 +51,29 @@
  </view>
  <view bindtap="showPopup4" >
    <van-field
-   name="count"
+   name="repetitionRate"
     label="重复"
     title-width="8em"
     placeholder="重复次数"
-    value="{{count}}"
+    value="{{repetitionRate}}"
     required
     readonly
   /> 
  </view>
   <view bindtap="showPopup3" >
    <van-field
-   name="way"
+   name="remindMethod"
     label="提醒方式"
     title-width="8em"
     placeholder="选择提醒方式"
-    value="{{way}}"
+    value="{{remindMethod}}"
     required
     readonly
   />
   </view>
     <van-field
-    name="tip"
+    model:value="{{description}}"
+    name="description"
     label="备注"
     maxlength="11"
     title-width="8em"
@@ -80,11 +81,6 @@
     clearable
   />
 </van-cell-group>
-<van-popup show="{{ show1 }}" bind:close="onClose1"  position="bottom"
-  custom-style="height: 50%">
-    <van-picker title="选择时间" show-toolbar columns="{{ columns1 }}"  bind:cancel="onClose1"
-  bind:confirm="onConfirm1"/>
-</van-popup>
 <van-popup show="{{ show2 }}" bind:close="onClose2"  position="bottom"
   custom-style="height: 50%">
     <van-picker title="选择剂量" show-toolbar columns="{{ columns2 }}"  bind:cancel="onClose2"
@@ -99,6 +95,16 @@
   custom-style="height: 50%">
     <van-picker title="重复次数" show-toolbar columns="{{ columns4 }}"  bind:cancel="onClose4"
   bind:confirm="onConfirm4"/>
+</van-popup>
+<van-popup show="{{ show5 }}" bind:close="onClose5"  position="bottom"
+  custom-style="height: 50%">
+    <van-picker title="服药人员" show-toolbar columns="{{ patientNames }}"  bind:cancel="onClose5"
+  bind:confirm="onConfirm5" />
+</van-popup>
+<van-popup show="{{ show6 }}" bind:close="onClose6"  position="bottom"
+  custom-style="height: 50%">
+    <van-picker title="服药药品" show-toolbar columns="{{ medicineNames }}"  bind:cancel="onClose6"
+  bind:confirm="onConfirm6" />
 </van-popup>
  <button  class="button" disabled="{{disabled}}" form-type="submit">保存
  </button>

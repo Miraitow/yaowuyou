@@ -1,18 +1,67 @@
-// pages/jiarenxinxi/jiarenxinxi.js
+const {patients} = require("../../http/index.js")
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    id:1,
+    role:0,
+    patients:[],
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  getpatients(){
+    // this.setData({
+    //  patients : [
+  //       {
+  //         "patientName": "张三",
+  //         "patientAge": "69岁",
+  //         "patientRoom": "001",
+  //         "guardianName": "张三",
+  //         "guardianPhone": "123456",
+  //         "medicineBoxName": "01药箱",
+  //         "birthday": "1955-02-03",
+  //         "personalIntro": "asd"
+  //     },
+  //     {
+  //         "patientName": "李四",
+  //         "patientAge": "69岁",
+  //         "patientRoom": "002",
+  //         "guardianName": "张三",
+  //         "guardianPhone": "123456",
+  //         "medicineBoxName": "02药箱",
+  //         "birthday": "1955-02-04",
+  //         "personalIntro": "asdads"
+  //     },
+  //     {
+  //         "patientName": "王五",
+  //         "patientAge": "69岁",
+  //         "patientRoom": "003",
+  //         "guardianName": "张三",
+  //         "guardianPhone": "123456",
+  //         "medicineBoxName": "03药箱",
+  //         "birthday": "1955-02-03",
+  //         "personalIntro": "asd"
+  //     },
+  //     {
+  //         "patientName": "老刘",
+  //         "patientAge": "69岁",
+  //         "patientRoom": "004",
+  //         "guardianName": "张三",
+  //         "guardianPhone": "123456",
+  //         "medicineBoxName": "04药箱",
+  //         "birthday": "1955-02-04",
+  //         "personalIntro": "asdads"
+  //     }
+  // ]
+    // })
+    const userId = wx.getStorageSync('user-id');
+    const role = wx.getStorageSync('roldId');
+    patients(userId,role).then((res)=>{
+      // console.log(res);
+      this.setData({
+        patients:res.data.data
+      })
+    })
+  },
+  onLoad() {
+   
   },
 
   /**
@@ -20,47 +69,15 @@ Page({
    */
   onReady() {
 
+    this.getpatients();
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    this.setData({
+      role: wx.getStorageSync('roldId'),
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
-  }
 })

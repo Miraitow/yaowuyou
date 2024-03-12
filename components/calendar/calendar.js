@@ -1,8 +1,8 @@
 // components/calendar/calendar.js
+const {
+  medicineRecords
+} = require("../../http/index.js")
 Component({
-    /**
-     * 组件的属性列表
-     */
     properties: {
       countdata:{
         type:Array,
@@ -22,111 +22,7 @@ Component({
       ]
     }
     },
-
-    /**
-     * 组件的初始数据
-     */
     data: {
-      steps: [
-        {
-          text: ' 9/16 24：00   ',
-          desc: '全部药品准时服用',
-          inactiveIcon: 'star-o',
-          activeIcon: 'success',
-        },
-        {
-          text: ' 9/15 24：00   ',
-          desc: '全部药品准时服用',
-          inactiveIcon: 'star-o',
-          activeIcon: 'success',
-        },
-        {
-          text: ' 9/14 24：00   ',
-          desc: '全部药品准时服用',
-          inactiveIcon: 'star-o',
-          activeIcon: 'success',
-        },
-        {
-          text: ' 9/13 24：00   ',
-          desc: '全部药品准时服用',
-          inactiveIcon: 'star-o',
-          activeIcon: 'success',
-        },
-        {
-          text: ' 9/12 24：00   ',
-          desc: '全部药品准时服用',
-          inactiveIcon: 'star-o',
-          activeIcon: 'success',
-        },
-        {
-          text: ' 9/11 24：00   ',
-          desc: '全部药品准时服用',
-          inactiveIcon: 'star-o',
-          activeIcon: 'success',
-        },
-        {
-          text: ' 9/10 24：00   ',
-          desc: '全部药品准时服用',
-          inactiveIcon: 'star-o',
-          activeIcon: 'success',
-        },
-        {
-          text: ' 9/9 24：00   ',
-          desc: '全部药品准时服用',
-          inactiveIcon: 'star-o',
-          activeIcon: 'success',
-        },
-        {
-          text: ' 9/8 24：00   ',
-          desc: '全部药品准时服用',
-          inactiveIcon: 'star-o',
-          activeIcon: 'success',
-        },
-
-        {
-          text: ' 9/7 24：00   ',
-          desc: '全部药品准时服用',
-          inactiveIcon: 'star-o',
-          activeIcon: 'success',
-        },
-        {
-          text: ' 9/6 24：00   ',
-          desc: '全部药品准时服用',
-          inactiveIcon: 'star-o',
-          activeIcon: 'success',
-        },
-        {
-          text: ' 9/5 24：00   ',
-          desc: '全部药品准时服用',
-          inactiveIcon: 'star-o',
-          activeIcon: 'success',
-        },
-        {
-          text: ' 9/4 24：00   ',
-          desc: '全部药品准时服用',
-          inactiveIcon: 'star-o',
-          activeIcon: 'success',
-        },
-        {
-          text: ' 9/3 24：00   ',
-          desc: '全部药品准时服用',
-          inactiveIcon: 'star-o',
-          activeIcon: 'success',
-        },
-        {
-          text: ' 9/2 24：00   ',
-          desc: '全部药品准时服用',
-          inactiveIcon: 'star-o',
-          activeIcon: 'success',
-        },
-        {
-          text: ' 9/1 24：00   ',
-          desc: '全部药品准时服用',
-          inactiveIcon: 'star-o',
-          activeIcon: 'success',
-        },
-
-      ],
         // 本月指的是选择的当前月份
         year: new Date().getFullYear(),
         month: new Date().getMonth() + 1,
@@ -140,10 +36,6 @@ Component({
         value2:0,
         value3:0,
     },
-
-    /**
-     * 组件的方法列表
-     */
     methods: {
         //获取当月天数
         getThisMonthDays(year, month) {

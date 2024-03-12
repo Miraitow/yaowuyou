@@ -1,38 +1,13 @@
 <view>
-<view class="box" bindtap="baogao">
+<view class="box" bindtap="baogao"  wx:for="{{medicalExam}}" data-id="{{item.medicalExamInfoId}}"  wx:key="medicalExamInfoId">
 <view class="inner">
   <view class="img">
 <image src="/image/jiaren1.jpg"></image>
-<p >101房王多金</p>
-<p class="p p1">本月已完成体检</p>
+<p >{{item.patientRoom}}{{item.patientName}}</p>
+<p wx:if="{{item.medicalExamInfoId!==null}}" class="p p1">本月已完成体检</p>
+<p wx:if="{{item.medicalExamInfoId==null}}" class="p p2">尚未完成体检</p>
 </view>
 </view>
 </view>
-<view class="box">
-<view class="inner">
-  <view class="img">
-<image src="/image/jiaren2.jpg"></image>
-<p >103房张玉兰</p>
-<p class="p p1">本月已完成体检</p>
-</view>
-</view>
-</view>
-<view class="box">
-<view class="inner">
-  <view class="img">
-<image src="/image/jiaren3.jpg"></image>
-<p >102房张爱华</p>
-<p class="p ">待完成</p>
-</view>
-</view>
-</view>
-<view class="box">
-<view class="inner">
-  <view class="img">
-<image src="/image/jiaren4.jpg"></image>
-<p >103房刘桂芳</p>
-<p class="p ">待完成</p>
-</view>
-</view>
-</view>
+
 </view>

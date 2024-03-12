@@ -1,21 +1,20 @@
 <view class="box ">
   <view class="set-1 ">
- <view class="todo" bindtap="todo">
- <image src="/image/daiban .png"></image>
- <view class="handle">处理待办事项</view>
- </view>
-    <block class="inner" wx:for="{{stepslist}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+    <block class="inner" wx:for="{{remindList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
       <view class="set-2 ">
-      <text class="set2-text1">{{item.text1}}</text>
-       <view class="set-view" wx:for="{{item.test}}" wx:for-item="item" wx:for-index="index" wx:key="index">
-         <view class="set-view-text2">{{item.text2}}</view>
-         <view class="set-view-text3" wx:for="{{item.text3}}">
-           <view class="set-view-text3-item" wx:for-item="item" wx:for-index="index" wx:key="index">{{item.text}}</view>
+      <text class="set2-text1">{{item.remindTime}}</text>
+       <view class="set-view" wx:for="{{item.patientList}}" wx:for-item="inneritem" wx:for-index="innerindex" wx:key="innerindex">
+         <view class="set-view-text2">{{inneritem.patientRoom}}房 {{inneritem.patientName}}</view>
+         <view class="set-view-text3" wx:for="{{inneritem.medicineList}}" wx:for-item="medicineitem" wx:for-index="medicineindex" wx:key="medicineindex" >
+           <view class="set-view-text3-item" >
+             <p> {{medicineitem.medicineName}}----------------{{medicineitem.medicineDosage}}{{medicineitem.medicineUnit}}</p>
+             <view wx:if="{{!medicineitem.confirmed}}" class="confirmbtn" bindtap="checkconfirm" data-remind-id="{{medicineitem.remindId}}" data-medicine-id="{{medicineitem.medicineId}}" data-medicine-dosage="{{medicineitem.medicineDosage}}" data-medicine-unit="{{medicineitem.medicineUnit}}"  data-patient-id="{{remindList[index].patientList[innerindex].patientId}}"  data-remind-time="{{remindList[index].remindTime}}">确认</view>
+            </view>
          </view>
        </view>
       </view>
     </block>
-    
+    <!-- 添加提醒 -->
       <view style="width: 15vw; border-radius: 15vw;height: 15vw;" bindtap="onclick" class="btn">
         <image src="../../image/jiahao.png" class="image"></image>
       </view>

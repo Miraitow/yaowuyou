@@ -20,3 +20,6 @@
 .p1{
   color: #1ac8a2;
 }
+.p2{
+  color: #ffb800;
+}

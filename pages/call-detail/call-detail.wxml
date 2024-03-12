@@ -3,27 +3,27 @@
 <!-- 头像及介绍 -->
 <view class="img">
 <image src="/image/touxiang1.jpg"></image>
-<view class="name">阿明</view>
-<view class="xinxi">101房王多金儿子</view>
+<view class="name">{{message.name}}</view>
+<view class="xinxi">{{message.patientRoom}}房{{message.patientName}}{{message.patientGuardianRelation}}</view>
 </view>
 <!-- 联系电话、家庭住址、备注说明 -->
 <view class="foot">
 <view class="foot-t">
   <van-cell-group inset>
-  <van-cell title="联系电话"  label="15197294235" />
+  <van-cell title="联系电话"  label="{{message.cellphone}}" />
   <image src="/image/dianhua.png" class="img1" ></image>
   <image src="/image/xinxi.png"  class="img2"></image>
   </van-cell-group>
 </view>
 <view class="foot-m">
   <van-cell-group inset>
-  <van-cell title="家庭住址"  label="湖南省湘潭市雨湖区" />
+  <van-cell title="家庭住址"  label="{{message.address}}" />
   <image src="/image/dizhi.png" class="img2"></image>
   </van-cell-group>
 </view>
 <view class="foot-f">
   <van-cell-group inset>
-  <van-cell title="备注说明"  label="暂无" />
+  <van-cell title="备注说明"  label="{{message.description}}" />
   </van-cell-group>
 </view>
 </view>
