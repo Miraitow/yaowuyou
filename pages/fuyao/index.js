@@ -4,69 +4,75 @@ const {confirmRecords} = require("../../http/index.js")
 
 Page({
   data: {
-    // remindList:[],
-    show:0,
-    remindList: [
-      {
-        "remindTime": "2016-06-14 17:50:45",
-        "patientList": [
-          {
-            "patientId": 1,
-            "patientName": "老王",
-            "patientRoom": "101房",
-            "medicineList": [
-              {
-                "remindId": 1,
-                "medicineId": 2,
-                "medicineName": "感冒灵",
-                "medicineDosage": 2,
-                "medicineUnit": "袋"
-              },
-              {
-                "remindId": 3,
-                "medicineId": 3,
-                "medicineName": "阿莫西林",
-                "medicineDosage": 2,
-                "medicineUnit": "粒"
-              }
-            ]
-          },
-          {
-            "patientId": 2,
-            "patientName": "老张",
-            "patientRoom": "103房",
-            "medicineList": [
-              {
-                "remindId": 2,
-                "medicineId": 3,
-                "medicineName": "感冒灵",
-                "medicineDosage": 2,
-                "medicineUnit": "袋"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "remindTime": "2013-03-14 17:50:45",
-        "patientList": [
-          {
-            "patientId": 1,
-            "patientName": "老王",
-            "patientRoom": "101房",
-            "medicineList": [
-              {
-                "remindId": 1,
-                "medicineId": 1,
-                "medicineName": "阿莫西林",
-                "medicineDosage": 2,
-                "medicineUnit": "粒"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    remindList:[],
+    // remindList: [
+    //   {
+    //     "remindTime": "2016-06-14 17:50:45",
+    //     "patientList": [
+    //       {
+    //         "patientId": 1,
+    //         "patientName": "老王",
+    //         "patientRoom": "101房",
+    //         "medicineList": [
+    //           {
+    //             "remindId": 1,
+    //             "medicineId": 2,
+    //             "medicineName": "感冒灵",
+    //             "medicineDosage": 2,
+    //             "medicineUnit": "袋"
+    //           },
+    //           {
+    //             "remindId": 3,
+    //             "medicineId": 3,
+    //             "medicineName": "阿莫西林",
+    //             "medicineDosage": 2,
+    //             "medicineUnit": "粒"
+    //           }
+    //         ]
+    //       },
+    //       {
+    //         "patientId": 2,
+    //         "patientName": "老张",
+    //         "patientRoom": "103房",
+    //         "medicineList": [
+    //           {
+    //             "remindId": 2,
+    //             "medicineId": 3,
+    //             "medicineName": "感冒灵",
+    //             "medicineDosage": 2,
+    //             "medicineUnit": "袋"
+    //           }
+    //         ]
+    //       }
+    //     ]
+    //   },
+    //   {
+    //     "remindTime": "2013-03-14 17:50:45",
+    //     "patientList": [
+    //       {
+    //         "patientId": 1,
+    //         "patientName": "老王",
+    //         "patientRoom": "101房",
+    //         "medicineList": [
+    //           {
+    //             "remindId": 4,
+    //             "medicineId": 1,
+    //             "medicineName": "阿莫西林",
+    //             "medicineDosage": 2,
+    //             "medicineUnit": "粒"
+    //           },
+    //           {
+    //             "remindId": 5,
+    //             "medicineId": 1,
+    //             "medicineName": "阿莫西林",
+    //             "medicineDosage": 2,
+    //             "medicineUnit": "粒"
+    //           }
+    //         ]
+    //       }
+    //     ]
+    //   }
+    // ]
   },
 
   checkconfirm(e){
@@ -79,7 +85,7 @@ Page({
         remind.patientList = remind.patientList.map(patient => {
           if (patient.patientId === patientId) {
             patient.medicineList = patient.medicineList.map(medicine => {
-              if (medicine.medicineId === medicineId) {
+              if (medicine.remindId === remindId) {
                 // 添加一个字段来标记药品已经确认
                 medicine.confirmed = true;
               }
@@ -104,9 +110,6 @@ Page({
     confirmRecords(records).then((res)=>{
       //  console.log(res);
       if(res.data.code === 200){
-        this.setData({
-          show:1,
-        })
         wx.showToast({
           title: '确认成功',
           icon:'success',
@@ -121,16 +124,16 @@ Page({
     })
   },
 
-  // onLoad: function (options) {
-  //   const userId = wx.getStorageSync('user-id');
-  //   const medicinedate = new Date().toJSON().substring(0, 10);
-  //   medicineReminds(userId,medicinedate).then((res)=>{
-  //     // console.log(res);
-  //     this.setData({
-  //       remindList:res.data.data
-  //     })
-  //   })
-  // },
+  onLoad: function (options) {
+    const userId = wx.getStorageSync('user-id');
+    const medicinedate = new Date().toJSON().substring(0, 10);
+    medicineReminds(userId,medicinedate).then((res)=>{
+      // console.log(res);
+      this.setData({
+        remindList:res.data.data
+      })
+    })
+  },
 
   onShow: function () {
     if (typeof this.getTabBar === 'function' && this.getTabBar()) {
