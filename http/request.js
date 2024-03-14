@@ -2,8 +2,9 @@ const { baseUrl } = require('./env.js').dev
 
 module.exports = {
   request(url,method="GET",data={}){
-    console.log(data);
+    console.log('data',data);
     let fullUrl = `${baseUrl}${url}`;
+    console.log(fullUrl);
     wx.showLoading({
       title: '玩命加载中',
     })

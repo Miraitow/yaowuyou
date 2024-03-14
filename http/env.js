@@ -1,5 +1,5 @@
 module.exports = {
   dev:{
-    baseUrl:'http://ixdgtz.natappfree.cc'
+    baseUrl:'http://jf6c3n.natappfree.cc'
   }
 }

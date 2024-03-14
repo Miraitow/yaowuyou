@@ -124,16 +124,16 @@ Page({
     })
   },
 
-  onLoad: function (options) {
-    const userId = wx.getStorageSync('user-id');
-    const medicinedate = new Date().toJSON().substring(0, 10);
-    medicineReminds(userId,medicinedate).then((res)=>{
-      // console.log(res);
-      this.setData({
-        remindList:res.data.data
-      })
-    })
-  },
+  // onLoad (options) {
+  //   const userId = wx.getStorageSync('user-id');
+  //   const medicinedate = new Date().toJSON().substring(0, 10);
+  //   medicineReminds(userId,medicinedate).then((res)=>{
+  //     // console.log(res);
+  //     this.setData({
+  //       remindList:res.data.data
+  //     })
+  //   })
+  // },
 
   onShow: function () {
     if (typeof this.getTabBar === 'function' && this.getTabBar()) {
@@ -149,6 +149,14 @@ Page({
         list:USER_PAGE.adminTabbarList
       })
     }
-  }
+  };
+  const userId = wx.getStorageSync('user-id');
+  const medicinedate = new Date().toJSON().substring(0, 10);
+  medicineReminds(userId,medicinedate).then((res)=>{
+    // console.log(res);
+    this.setData({
+      remindList:res.data.data
+    })
+  })
   },
 })

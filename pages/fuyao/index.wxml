@@ -4,7 +4,7 @@
       <view class="set-2 ">
       <text class="set2-text1">{{item.remindTime}}</text>
        <view class="set-view" wx:for="{{item.patientList}}" wx:for-item="inneritem" wx:for-index="innerindex" wx:key="innerindex">
-         <view class="set-view-text2">{{inneritem.patientRoom}}房 {{inneritem.patientName}}</view>
+         <view class="set-view-text2">{{inneritem.patientRoom}} {{inneritem.patientName}}</view>
          <view class="set-view-text3" wx:for="{{inneritem.medicineList}}" wx:for-item="medicineitem" wx:for-index="medicineindex" wx:key="medicineindex" >
            <view class="set-view-text3-item" >
              <p> {{medicineitem.medicineName}}----------------{{medicineitem.medicineDosage}}{{medicineitem.medicineUnit}}</p>

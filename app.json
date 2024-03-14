@@ -27,7 +27,6 @@
     "pages/todo/index",
     "pages/gerenxinxi/index",
     "pages/mine/help",
-    "pages/mine/shop",
     "pages/mine/online"
   ],
   "window": {
