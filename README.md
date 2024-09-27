@@ -14,4 +14,3 @@ git pull origin master
 ```
 
 ### 合并自己分支到master
-[链接](http://t.csdnimg.cn/HZZCQ)
