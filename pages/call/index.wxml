@@ -16,8 +16,9 @@
   right-width="{{ 65 }}"
   async-close
   bind:close="onClose"
+  wx:for="{{contactlist}}" wx:key="index"  wx:for-index="index" 
 >
-  <van-cell-group wx:for="{{contactlist}}" wx:key="index"  wx:for-index="index" >
+  <van-cell-group >
     <van-card
     class="touxiang"
   desc="{{item.patientRoom}}房{{item.patientName}}{{item.patientGuardianRelation}}"

@@ -5,74 +5,74 @@ const {confirmRecords} = require("../../http/index.js")
 Page({
   data: {
     remindList:[],
-    // remindList: [
-    //   {
-    //     "remindTime": "2016-06-14 17:50:45",
-    //     "patientList": [
-    //       {
-    //         "patientId": 1,
-    //         "patientName": "老王",
-    //         "patientRoom": "101房",
-    //         "medicineList": [
-    //           {
-    //             "remindId": 1,
-    //             "medicineId": 2,
-    //             "medicineName": "感冒灵",
-    //             "medicineDosage": 2,
-    //             "medicineUnit": "袋"
-    //           },
-    //           {
-    //             "remindId": 3,
-    //             "medicineId": 3,
-    //             "medicineName": "阿莫西林",
-    //             "medicineDosage": 2,
-    //             "medicineUnit": "粒"
-    //           }
-    //         ]
-    //       },
-    //       {
-    //         "patientId": 2,
-    //         "patientName": "老张",
-    //         "patientRoom": "103房",
-    //         "medicineList": [
-    //           {
-    //             "remindId": 2,
-    //             "medicineId": 3,
-    //             "medicineName": "感冒灵",
-    //             "medicineDosage": 2,
-    //             "medicineUnit": "袋"
-    //           }
-    //         ]
-    //       }
-    //     ]
-    //   },
-    //   {
-    //     "remindTime": "2013-03-14 17:50:45",
-    //     "patientList": [
-    //       {
-    //         "patientId": 1,
-    //         "patientName": "老王",
-    //         "patientRoom": "101房",
-    //         "medicineList": [
-    //           {
-    //             "remindId": 4,
-    //             "medicineId": 1,
-    //             "medicineName": "阿莫西林",
-    //             "medicineDosage": 2,
-    //             "medicineUnit": "粒"
-    //           },
-    //           {
-    //             "remindId": 5,
-    //             "medicineId": 1,
-    //             "medicineName": "阿莫西林",
-    //             "medicineDosage": 2,
-    //             "medicineUnit": "粒"
-    //           }
-    //         ]
-    //       }
-    //     ]
-    //   }
-    // ]
+    remindList: [
+      {
+        "remindTime": "2016-06-14 17:50:45",
+        "patientList": [
+          {
+            "patientId": 1,
+            "patientName": "老王",
+            "patientRoom": "101房",
+            "medicineList": [
+              {
+                "remindId": 1,
+                "medicineId": 2,
+                "medicineName": "感冒灵",
+                "medicineDosage": 2,
+                "medicineUnit": "袋"
+              },
+              {
+                "remindId": 3,
+                "medicineId": 3,
+                "medicineName": "阿莫西林",
+                "medicineDosage": 2,
+                "medicineUnit": "粒"
+              }
+            ]
+          },
+          {
+            "patientId": 2,
+            "patientName": "老张",
+            "patientRoom": "103房",
+            "medicineList": [
+              {
+                "remindId": 2,
+                "medicineId": 3,
+                "medicineName": "感冒灵",
+                "medicineDosage": 2,
+                "medicineUnit": "袋"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "remindTime": "2013-03-14 17:50:45",
+        "patientList": [
+          {
+            "patientId": 1,
+            "patientName": "老王",
+            "patientRoom": "101房",
+            "medicineList": [
+              {
+                "remindId": 4,
+                "medicineId": 1,
+                "medicineName": "阿莫西林",
+                "medicineDosage": 2,
+                "medicineUnit": "粒"
+              },
+              {
+                "remindId": 5,
+                "medicineId": 1,
+                "medicineName": "阿莫西林",
+                "medicineDosage": 2,
+                "medicineUnit": "粒"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
 
   checkconfirm(e){

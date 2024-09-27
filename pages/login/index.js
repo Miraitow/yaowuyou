@@ -75,6 +75,16 @@ clickRegister(){
   }
 },
 handlelogin(param){
+  if(this.data.role == 0){
+    wx.reLaunch({
+      url: '../zixun/index',
+    })
+  }
+  else{
+    wx.reLaunch({
+      url: '../fuyao/index',
+    })
+  }
   userlogin(param).then((res)=>{
     if(res.data.code === 200){
       wx.setStorageSync('user-id', res.data.data.userId);
